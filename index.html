@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/awesome.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<h1>Third-Party Content</h1>
+					<h2>The weak link in your chain?</h2>
+				</section>
+				<section data-background-color='hsl(0,50%,20%)'>
+					<h2>Other metaphors...</h2>
+					<ul>
+						<li class="fragment">Parasites</li>
+						<li class="fragment">Those stocks...</li>
+						<li class="fragment">That person at all the parties...</li>
+					</ul>
+				</section>
+				<section>
+					<p>I've given talks about third-parties for five years.</p>
+					<p class="fragment">They're here to stay...</p>
+					<p class="fragment">&amp; we have increasingly limited control over them</p>
+				</section>
+				<section data-background-color='hsl(0,50%,20%)'>
+					<h3>The <em>money</em></h3>
+					<blockquote>“We know that Optimizely slows down the site, but it will get us $750k increased revenue this year”</blockquote>
+				</section>
+				<section data-background-color='hsl(0,50%,20%)'>
+					<h3>The <em>it's not my job</em></h3>
+					<blockquote>“We suspect it might slow the site down, we haven’t tested it. Marketing says it’s critical to their latest TV campaign so there’s no point arguing”</blockquote>
+				</section>
+				<section data-background-color='hsl(0,50%,20%)'>
+					<h3>The <em>tag manager</em></h3>
+					<blockquote>“They've got access to the tag manager, head for cover!”</blockquote>
+				</section>
+				<section>
+					<h2>Some assumptions...</h2>
+					<ul>
+						<li class="fragment">We aren't in (commercial) control</li>
+						<li class="fragment">We care about site speed</li>
+					</ul>
+				</section>
+				
+
+			</div>
+			<p id="attribution" style="position:absolute;top:0px;right:40px;opacity:0.5;z-index:10;font-size:80%;">@SimonHearne</p>
+		</div>
+		
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			Reveal.initialize({
+				transition: 'none',
+				history: 'true',
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
