@@ -1,7 +1,21 @@
-p.attribution {
-  position: absolute;
-  bottom: 10px;
-  left: 10px;
+p.subtitle {
   font-size: 80%;
   opacity: 0.7;
+  z-index: 10;
+}
+p.top-right {
+  position: fixed;
+  top: 0px;
+  right: 40px;
+}
+p.bottom-left {
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+}
+p.smaller {
+  font-size: 60%;
+}
+p.smallest {
+  font-size: 50%;
 }

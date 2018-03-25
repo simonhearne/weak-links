@@ -1,60 +1,260 @@
 <!doctype html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/custom.css">
-		<link rel="stylesheet" href="css/theme/awesome.css">
+	<title>Weak Links | Simon Hearne</title>
 
-		<!-- Theme used for syntax highlighting of code -->
-		<link rel="stylesheet" href="lib/css/zenburn.css">
+	<link rel="stylesheet" href="css/reveal.css">
+	<link rel="stylesheet" href="css/custom.css">
+	<link rel="stylesheet" href="css/theme/awesome.css">
 
-		<!-- Printing and PDF exports -->
-		<script>
-			var link = document.createElement( 'link' );
-			link.rel = 'stylesheet';
-			link.type = 'text/css';
-			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
-			document.getElementsByTagName( 'head' )[0].appendChild( link );
-		</script>
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
+	<!-- Theme used for syntax highlighting of code -->
+	<link rel="stylesheet" href="lib/css/zenburn.css">
+
+	<!-- Printing and PDF exports -->
+	<script>
+		var link = document.createElement('link');
+		link.rel = 'stylesheet';
+		link.type = 'text/css';
+		link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+		document.getElementsByTagName('head')[0].appendChild(link);
+	</script>
+</head>
+
+<body>
+	<div class="reveal">
+		<div class="slides">
+
+			<section>
+				<h1>Testing</h1>
+				<p class="subtitle bottom-left smallest">www.test.com</p>
+			</section>
+			<section>
+				<h1>Third-Party Content</h1>
+				<h2>The weak link in your chain?</h2>
+			</section>
+			<section data-background-color='hsl(0,50%,20%)'>
+				<h2>Other metaphors...</h2>
+				<ul>
+					<li class="fragment">Parasites</li>
+					<li class="fragment">Those stocks...</li>
+					<li class="fragment">That person at all the parties...</li>
+				</ul>
+			</section>
+			<section data-lvl="1" data-desc="Third-party content is here to stay">
+				<p>I've given talks about third-party content for five years,
+					<br>and I'm afraid to say...</p>
+				<p class="fragment">we seem to have less control than ever</p>
+			</section>
+			<section data-lvl="1" data-desc="They pose significant risk to user experience">
+				<h1>Risk!</h1>
+			</section>
+			<section data-lvl="2" data-desc="Malicious code injection">
 				<section>
-					<h1>Third-Party Content</h1>
-					<h2>The weak link in your chain?</h2>
+					<h2>Malicious code injection 🙈</h2>
 				</section>
-				<section data-background-color='hsl(0,50%,20%)'>
-					<h2>Other metaphors...</h2>
-					<ul>
-						<li class="fragment">Parasites</li>
-						<li class="fragment">Those stocks...</li>
-						<li class="fragment">That person at all the parties...</li>
-					</ul>
+				<section data-lvl="3" data-desc="At the third-party (twitter / realDonaldTrump account)">
+					agrieved employees
 				</section>
+				<section data-lvl="3" data-desc="Outsider access their network">
+					l33t h4x0r5
+				</section>
+				<section data-lvl="3" data-desc="ISP (multiple examples)">
+					Internet 'Service' Providers
+				</section>
+				<section data-lvl="3" data-desc="CDN (AMP)">
+					Content Delivery Networks
+				</section>
+			</section>
+			<section data-lvl="2" data-desc="Availability">
+				<section>
+					<h2>Availability 📉</h2>
+				</section>
+				<section data-lvl="3">
+					<p>SPOFs are rare (hopefully!)</p>
+				</section>
+				<section data-lvl="3" data-desc="DR solution?">
+					<p>What's their DR?</p>
+				</section>
+				<section data-lvl="3" data-desc="CDN?">
+					<p>Are they using a CDN?</p>
+					<p class="fragment">Is it as good as yours?</p>
+				</section>
+				<section data-lvl="3" data-desc="SLAs?">
+					<p>What is their SLA for availability?</p>
+					<p class="fragment">Is it as good as yours?</p>
+				</section>
+			</section>
+			<section data-lvl="2" data-desc="Code Quality">
+				<section>
+					<h2>Code Quality 🔎</h2>
+				</section>
+				<section data-lvl="3" data-desc="Release Schedule?">
+					<p>Different release schedules</p>
+				</section>
+				<section data-lvl="3" data-desc="Global Scope">
+					<p>Polluting the global scope</p>
+				</section>
+				<section data-lvl="3" data-desc="Console log">
+					<p>Spamming the console log</p>
+				</section>
+				<section data-lvl="3" data-desc="Clearing resource timing?! (New Relic)">
+					<p>Just plain thoughtless</p>
+				</section>
+			</section>
+			<section data-lvl="2" data-desc="Performance">
+				<section>
+					<h2>Performance 🚀</h2>
+				</section>
+				<section data-lvl="3" data-desc="Self-policing doesn’t work">
+					<p>We can't trust them to self-police</p>
+					<blockquote>
+						... the X Web Reference Snippet was available ... and the download time over <b>HTTP</b> did not exceed <b>500 ms</b>. 
+					</blockquote>
+					<blockquote class="fragment">
+							Snippet is sampled every minute from a variety of <b>U.S.</b> locations.
+					</blockquote>
+					<p class="subtitle bottom-left smallest">status.optimizely.com</p>
+				</section>
+				<section data-lvl="3" data-desc="RUM">
+					<p>Resource Timing to the rescue!</p>
+					<img src="images/resource-timing-overview-1.png">
+					<p class="subtitle bottom-left smaller">https://www.w3.org/TR/resource-timing-1/</p>
+				</section>
+				<section data-lvl="3" data-desc="RUM">
+					<p>Resource Timing to the rescue?</p>
+					<p>Not without Timing-Allow-Origin 🙈</p>
+					<img src="images/resource-timing-overview-2.png">
+					<p class="subtitle bottom-left smaller">https://www.w3.org/TR/resource-timing-1/</p>
+				</section>
+				<section data-lvl="3" data-desc="Resource Timing is limited (no redirects, 150 resources, limited data without TAO)">
+					content
+				</section>
+				<section data-lvl="3" data-desc="Don’t like us measuring them - TAO research shows 72% of third-party content has no TAO. https://developer.akamai.com/blog/2017/07/26/measuring-performance-third-party-contributors/">
+					content
+				</section>
+			</section>
+			<section data-lvl="1" data-desc="Engineers have little / no control over which are used, so we…">
+				<section>
+					<h3>We have little or no control over which are used</h3>
+				</section>
+				<section data-lvl="2" data-desc="Find out what’s there">
+					content https://www.silicon.co.uk/e-marketing/adblock-plus-adblocking-network-traffic-172245"> content
+				</section>
+				<section data-lvl="3" data-desc="Requestmaps">
+					content
+				</section>
+				<section data-lvl="3" data-desc="Tag explosion">
+					content
+				</section>
+			</section>
+			<section data-lvl="2" data-desc="Determine the impact they have on our site">
+				content
+				<section data-lvl="3" data-desc="Resource Impact Score">
+					content
+				</section>
+				<section data-lvl="3" data-desc="Third-Party-Impact">
+					content
+				</section>
+			</section>
+			<section data-lvl="2" data-desc="Report on them">
+				content
+				<section data-lvl="3" data-desc="CSP Report-Only (report-uri)">
+					content
+				</section>
+				<section data-lvl="3" data-desc="Synthetic Monitoring (catchpoint)">
+					content
+				</section>
+				<section data-lvl="3" data-desc="RUM (with limitations)">
+					content
+				</section>
+			</section>
+			<section data-lvl="2" data-desc="Protect ourselves">
+				content
+				<section data-lvl="3" data-desc="CSP ">
+					content
+				</section>
+				<section data-lvl="3" data-desc="SRI">
+					content
+				</section>
+				<section data-lvl="3" data-desc="Service Worker">
+					content
+				</section>
+				<section data-lvl="3" data-desc="Self-hosting / Proxying">
+					content
+				</section>
+			</section>
+			<section data-lvl="2" data-desc="Have a third-party policy">
+				content
+			</section>
+			<section data-lvl="2" data-desc="Share the data with martech etc.">
+				content
+			</section>
+			<section data-lvl="1" data-desc="Conclusion">
+				content
+				<section data-lvl="2" data-desc="Third-party content may be a weak link, but it's here to stay">
+					content
+				</section>
+				<section data-lvl="2" data-desc="There are four things we need to do as engineers:">
+					content
+				</section>
+				<section data-lvl="3" data-desc="Know what's there">
+					content
+				</section>
+				<section data-lvl="3" data-desc="Know the impact">
+					content
+				</section>
+				<section data-lvl="3" data-desc="Measure them">
+					content
+				</section>
+				<section data-lvl="3" data-desc="Protect ourselves">
+					content
+				</section>
+				<section data-lvl="3" data-desc="Share data with other teams!">
+					<h2>Share data with other teams!</h2>
+				</section>
+				<section>
+					<h1>Thank you, and good luck!</h1>
+					<p>Simon Hearne</p>
+					<p>webperf.ninja/tools</p>
+					<p>simonhearne.github.io/weak-links</p>
+				</section>
+
+
+
+				<!--  INTRO  -->
+
 				<section>
 					<p>I've given talks about third-parties for five years.</p>
 					<p class="fragment">They're here to stay...</p>
 					<p class="fragment">&amp; we have increasingly limited control over them</p>
 				</section>
 				<section data-background-color='hsl(0,50%,20%)'>
-					<h3>The <em>money</em></h3>
+					<h3>The
+						<em>money</em>
+					</h3>
 					<blockquote>“We know that Optimizely slows down the site, but it will get us $750k increased revenue this year”</blockquote>
 				</section>
 				<section data-background-color='hsl(0,50%,20%)'>
-					<h3>The <em>it's not my job</em></h3>
-					<blockquote>“We suspect it might slow the site down, we haven’t tested it. Marketing says it’s critical to their latest TV campaign so there’s no point arguing”</blockquote>
+					<h3>The
+						<em>it's not my job</em>
+					</h3>
+					<blockquote>“We suspect it might slow the site down, we haven’t tested it. Marketing says it’s critical to their latest TV campaign
+						so there’s no point arguing”</blockquote>
 				</section>
 				<section data-background-color='hsl(0,50%,20%)'>
-					<h3>The <em>tag manager</em></h3>
+					<h3>The
+						<em>tag manager</em>
+					</h3>
 					<blockquote>“They've got access to the tag manager, head for cover!”</blockquote>
 					<p class="attribution">Medium clicks-and-mortar store, UK</p>
 				</section>
+
+
+
 				<section>
 					<h2>Some assumptions...</h2>
 					<ul>
@@ -63,26 +263,39 @@
 						<li>test</li>
 					</ul>
 				</section>
-				
 
-			</div>
-			<p id="attribution" style="position:absolute;top:0px;right:40px;opacity:0.5;z-index:10;font-size:80%;">@SimonHearne</p>
+
 		</div>
-		
-		<script src="lib/js/head.min.js"></script>
-		<script src="js/reveal.js"></script>
+		<p class="subtitle top-right">@SimonHearne</p>
+	</div>
 
-		<script>
-			Reveal.initialize({
-				transition: 'none',
-				history: 'true',
-				dependencies: [
-					{ src: 'plugin/markdown/marked.js' },
-					{ src: 'plugin/markdown/markdown.js' },
-					{ src: 'plugin/notes/notes.js', async: true },
-					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
-				]
-			});
-		</script>
-	</body>
+	<script src="lib/js/head.min.js"></script>
+	<script src="js/reveal.js"></script>
+
+	<script>
+		Reveal.initialize({
+			transition: 'none',
+			history: 'true',
+			dependencies: [{
+					src: 'plugin/markdown/marked.js'
+				},
+				{
+					src: 'plugin/markdown/markdown.js'
+				},
+				{
+					src: 'plugin/notes/notes.js',
+					async: true
+				},
+				{
+					src: 'plugin/highlight/highlight.js',
+					async: true,
+					callback: function () {
+						hljs.initHighlightingOnLoad();
+					}
+				}
+			]
+		});
+	</script>
+</body>
+
 </html>
