@@ -8,8 +8,8 @@
 	<title>Weak Links | Simon Hearne</title>
 
 	<link rel="stylesheet" href="css/reveal.css">
-	<link rel="stylesheet" href="css/custom.css">
 	<link rel="stylesheet" href="css/theme/awesome.css">
+	<link rel="stylesheet" href="css/custom.css">
 
 	<!-- Theme used for syntax highlighting of code -->
 	<link rel="stylesheet" href="lib/css/zenburn.css">
@@ -23,30 +23,48 @@
 		document.getElementsByTagName('head')[0].appendChild(link);
 	</script>
 </head>
+<!-- TODO
+re-make andy's chart with RUM data
+compare http archive performance with crux
+integrate thirdparty db into thirdparty impact
+create third-party insights?
+sort out this repo... talks/weaklinks?
+add request map to impact
 
+-->
 <body>
 	<div class="reveal">
 		<div class="slides">
-
-			<section>
-				<h1>Testing</h1>
-				<p class="subtitle bottom-left smallest">www.test.com</p>
-			</section>
-			<section>
+			<section data-state="title-slide">
 				<h1>Third-Party Content</h1>
 				<h2>The weak link in your chain?</h2>
+				<p class="subtitle">#perfmatters conf 2018</p>
+				<a href="#/18/2">SRI</a>
 			</section>
-			<section data-background-color='hsl(0,50%,20%)'>
+			<section>
 				<h2>Other metaphors...</h2>
-				<ul>
-					<li class="fragment">Parasites</li>
-					<li class="fragment">Those stocks...</li>
-					<li class="fragment">That person at all the parties...</li>
-				</ul>
+				
+					<p class="fragment">🤱 Parasites</p>
+					<p>&nbsp;</p><p>&nbsp;</p>
+				
+			</section>
+			<section data-state="main-slide">
+				<h2>Other metaphors...</h2>
+					<p>🧟‍♂️ Parasites</p>
+					<p class="fragment">📉 Those stocks...</p>
+					<p class="fragment">🤦‍♀️ That person at all the parties...</p>
+			</section>
+			<section>
+				<!-- TODO: the chain? write code, test, deploy to staging, deploy to live, third-parties...-->			
+				<h2>The 'chain'</h2>
+				<p class="todo">todo?</p>
+			</section>
+			<section>
+				<h2>AMP got something right 🤪</h2>
+				<p class="todo">TODO: AMP waterfall screenshot from tkadlec's post</p>
 			</section>
 			<section data-lvl="1" data-desc="Third-party content is here to stay">
-				<p>I've given talks about third-party content for five years,
-					<br>and I'm afraid to say...</p>
+				<h2>What i've learned in 5 years</h2>
 				<p class="fragment">we seem to have less control than ever</p>
 			</section>
 			<section>
@@ -54,46 +72,58 @@
 				<h2>The "business" 👩‍✈️</h2>
 				</section>
 
-				<section data-background-color='hsl(0,50%,20%)'>
+				<section>
 					<h3>The
-						<em>money</em>
+						<em>money</em> &nbsp;💵
 					</h3>
 					<blockquote>“We know that Optimizely slows down the site, but it will get us $750k increased revenue this year”</blockquote>
+					<p class="subtitle bottom-left smallest">Holiday website, UK</p>
 				</section>
-				<section data-background-color='hsl(0,50%,20%)'>
+				<section>
 					<h3>The
-						<em>it's not my job</em>
+						<em>it's not my job</em> 🤷‍♀️
 					</h3>
-					<blockquote>“We suspect it might slow the site down, we haven’t tested it. Marketing says it’s critical to their latest TV campaign
-						so there’s no point arguing”</blockquote>
+					<blockquote>“We suspect it slows the site down, we haven’t tested it. Marketing says it’s critical to their latest TV campaign so there’s no point arguing”</blockquote>
+					<p class="subtitle bottom-left smallest">Budget airline, UK</p>
 				</section>
-				<section data-background-color='hsl(0,50%,20%)'>
+				<section>
 					<h3>The
-						<em>tag manager</em>
+						<em>tag manager</em> 🕴
 					</h3>
-					<blockquote>“They've got access to the tag manager, head for cover!”</blockquote>
-					<p class="attribution">Medium clicks-and-mortar store, UK</p>
+					<blockquote>“They've got access to the tag manager, there's nothing we can do now.”</blockquote>
+					<p class="subtitle bottom-left smallest">Clicks-and-mortar store, UK</p>
 				</section>
 			</section>
 			<section data-lvl="1" data-desc="They pose significant risk to user experience">
-				<h1>Risk!</h1>
-				🎲
+				<section>
+					<h1>Risk</h1>
+					🎲
+				</section>
+				<section>
+					<h3>(ps: Availability Bias) 🤔</h3>
+					<ul>
+					<li class="fragment">Remember when Facebook went down?</li>
+					<li class="fragment">Remember when Disqus went down?</li>
+					<li class="fragment">Remember when Maxymiser went down?</li>
+					<li class="fragment">Remember when <b>Dyn</b> went down?</li>
+				</section>
 			</section>
 			<section data-lvl="2" data-desc="Malicious code injection">
 				<section>
-					<h2>Malicious code injection 🙈</h2>
+					<h2>Malicious code injection 👹</h2>
+					<p>Coinhive 😈</p>
 				</section>
 				<section data-lvl="3" data-desc="At the third-party (twitter / realDonaldTrump account)">
-					agrieved employees
+					<h3>P*ssed employees 🤬</h3>
 				</section>
 				<section data-lvl="3" data-desc="Outsider access their network">
-					l33t h4x0r5
+					</h3>l33t h4x0r5 👩‍💻</h3>
 				</section>
 				<section data-lvl="3" data-desc="ISP (multiple examples)">
-					Internet 'Service' Providers
+					<h3>Internet 'Service' Providers </h3>
 				</section>
 				<section data-lvl="3" data-desc="CDN (AMP)">
-					Content Delivery Networks
+					<h3>Content Delivery Networks</h3>
 				</section>
 			</section>
 			<section data-lvl="2" data-desc="Availability">
@@ -101,18 +131,19 @@
 					<h2>Availability 📉</h2>
 				</section>
 				<section data-lvl="3">
-					<p>SPOFs are rare (hopefully!)</p>
-				</section>
-				<section data-lvl="3" data-desc="DR solution?">
-					<p>What's their DR?</p>
+					<p>Do they fail gracefully?</p>
+					<p class="todo">TODO: +ve e.g. twitter cards</p>
+					<p class="todo">TODO: -ve e.g. ??</p>
 				</section>
 				<section data-lvl="3" data-desc="CDN?">
 					<p>Are they using a CDN?</p>
 					<p class="fragment">Is it as good as yours?</p>
+					<p class="todo">TODO: e.g. optimix.asia on akamai</p>
 				</section>
 				<section data-lvl="3" data-desc="SLAs?">
 					<p>What is their SLA for availability?</p>
 					<p class="fragment">Is it as good as yours?</p>
+					<p class="todo">TODO: are there any public slas?</p>
 				</section>
 			</section>
 			<section data-lvl="2" data-desc="Code Quality">
@@ -124,6 +155,7 @@
 				</section>
 				<section data-lvl="3" data-desc="Global Scope">
 					<p>Polluting the global scope</p>
+					<!-- Next basket button broken by monkey-patched function -->
 				</section>
 				<section data-lvl="3" data-desc="Console log">
 					<p>Spamming the console log</p>
@@ -131,13 +163,15 @@
 				<section data-lvl="3" data-desc="Clearing resource timing?! (New Relic)">
 					<p>Just plain thoughtless</p>
 				</section>
+				
+				<p class="todo">TODO: look at cvazac's deck for more</p>
 			</section>
 			<section data-lvl="2" data-desc="Performance">
 				<section>
 					<h2>Performance 🚀</h2>
 				</section>
 				<section data-lvl="3" data-desc="Self-policing doesn’t work">
-					<p>We can't trust them to self-police</p>
+					<p>Self-policing isn't good enough</p>
 					<blockquote>
 						... the X Web Reference Snippet was available ... and the download time over <b>HTTP</b> did not exceed <b>500 ms</b>. 
 					</blockquote>
@@ -146,6 +180,17 @@
 					</blockquote>
 					<p class="subtitle bottom-left smallest">status.optimizely.com</p>
 				</section>
+				<section>
+					<h3>The web is variable</h3>
+					<h4>(and so are third-parties</h4>
+					<p class="todo">Andy's distributions here</p>
+				</section>
+				<section>
+					<h3>The web is variable</h3>
+					<h4>(and so are third-parties</h4>
+					<p class="todo">TODO: Analysis from lambda_rt here</p>
+					<p>lambda_rt</p>
+				</section>
 				<section data-lvl="3" data-desc="RUM">
 					<p>Resource Timing to the rescue!</p>
 					<img src="images/resource-timing-overview-1.png">
@@ -153,18 +198,56 @@
 				</section>
 				<section data-lvl="3" data-desc="RUM">
 					<p>Resource Timing to the rescue?</p>
-					<p>Not without Timing-Allow-Origin 🙈</p>
+					<p>not without Timing-Allow-Origin 🙈</p>
 					<img src="images/resource-timing-overview-2.png">
 					<p class="subtitle bottom-left smaller">https://www.w3.org/TR/resource-timing-1/</p>
 				</section>
 				<section data-lvl="3" data-desc="Resource Timing is limited (no redirects, 150 resources, limited data without TAO)">
 					<p>Resource Timing won't save us</p>
 					<p class="fragment">🙈 no redirect information</p>
-					<p class="fragment">🙈 limited data on 72% of third-party content</p>
+					<p class="fragment">🙈 limited data on <b>72%</b> of third-party content</p>
 					<p class="subtitle bottom-left smaller"><a href="https://developer.akamai.com/blog/2017/07/26/measuring-performance-third-party-contributors/">developer.akamai.com/blog/2017/07/26/measuring-performance-third-party-contributors/</a></p>
 				</section>
-			</section><section>
-				<h1>We have little or no control over which are used</h1>
+			</section>
+			<section>
+				<section>
+					<h2>Performance 🚀</h2>
+					<h3>(for real this time)</h3>
+				</section>
+				<section>
+					<h3>CPU is our biggest bottleneck ⏳</h3>
+				</section>
+				<section>
+					<h3>Who's policing the third-parties?</h3>
+					<p class="todo">TODO: Andy's third party distributions</p>
+					<p class="todo">TODO: CPU abuser</p>
+					
+				</section>
+				<section>
+					<h3>Who watches the watchmen?</h3>
+					<p class="todo">TODO: Boomerang perf analysis</p>
+				</section>
+			</section>
+			<section>
+				<section>
+					<h2>Performance 🚀</h2>
+					<h3>(part III)</h3>
+				</section>
+				<section>
+					<h3>delaying onload</h3>
+					<p class="todo">TODO: replay optimix.asia example?</p>
+				</section>
+				<section>
+					<h3>filling the dns buffer</h3>
+					<!-- TODO: Boomerang perf analysis -->
+				</section>
+				<section>
+					<h3>keeping the radio awake</h3>
+					<p class="todo">TODO: example of never-ending pings (livechat?)</p>
+				</section>
+			</section>
+			<section>
+				<h2>We have little control over which are used</h2>
 				<p>But there are things we can do...</p>
 			</section>
 			<section data-lvl="1" data-desc="Engineers have little / no control over which are used, so we…">
@@ -172,22 +255,57 @@
 					<h2>Find out what's there</h2>
 					<!--https://www.silicon.co.uk/e-marketing/adblock-plus-adblocking-network-traffic-172245"-->
 				</section>
-				<section data-lvl="3" data-desc="Requestmaps">
-					content
-				</section>
 				<section data-lvl="3" data-desc="Tag explosion">
-					content
+					<h3>Synthetic Testing (webpagetest)</h3>
+					<p class="subtitle bottom-left smaller"><a href="https://webpagetest.org/">webpagetest.org/</a></p>
+				</section>
+				<section data-lvl="3" data-desc="Requestmaps">
+					<h3>Request Maps</h3>
+					<p class="todo">TODO: insert live requestmap?</p>
+					<p class="subtitle bottom-left smaller"><a href="https://github.com/simonhearne/requestmap/">github.com/simonhearne/requestmap/</a> | <a href="https://requestmap.webperf.tools/">requestmap.webperf.tools</a></p>
+				</section>
+				<section data-lvl="3" data-desc="Requestmaps">
+					<h3>Bonus: Third-party categorization</h3>
+					<p class="todo">TODO: finish the db!!!?</p>
+					<p class="subtitle bottom-left smaller"><a href="https://github.com/simonhearne/thirdpartydb/">github.com/simonhearne/thirdpartydb</a> | <a href="https://thirdpartydb.appspot.com/">thirdpartydb.appspot.com</a></p>
 				</section>
 			</section>
 			<section data-lvl="2" data-desc="Determine the impact they have on our site">
 				<section data-lvl="2" data-desc="Find out what’s there">
 					<h2>Determine the impact</h2>
 				</section>
-				<section data-lvl="3" data-desc="Resource Impact Score">
-					content
+				<section data-lvl="3" data-desc="Third-Party-Impact">
+					<h3>Synthetic Testing (webpagetest)</h3>
+					<p class="todo">TODO: video spof / block testing</p>
 				</section>
 				<section data-lvl="3" data-desc="Third-Party-Impact">
-					content
+					<h3>Synthetic Testing (made easy)</h3>
+					<p class="todo">TODO: third-party-impact</p>
+					<p class="subtitle bottom-left smaller"><a href="https://github.com/simonhearne/third-party-impact/">github.com/simonhearne/third-party-impact/</a></p>
+				</section>
+				<section data-lvl="3" data-desc="Resource Impact Score">
+					<h3>Resource Impact from RUM</h3>
+					<p class="todo">TODO: add RIS video</p>
+				</section>
+				<section data-lvl="3" data-desc="Resource Impact Score">
+					<h3>Advertising Partners</h3>
+					<p class="todo">TODO: add RIS results for mailonline / similar</p>
+				</section>
+				<section data-lvl="3" data-desc="Resource Impact Score">
+					<h3>Analytics</h3>
+					<p class="todo">TODO: add RIS results for analytics</p>
+				</section>
+				<section data-lvl="3" data-desc="Resource Impact Score">
+					<h3>Multivariate Testing / 'Optimization'</h3>
+					<p class="todo">TODO: add RIS results for optimizely</p>
+				</section>
+				<section>
+					<h3>Bonus: determine the value!</h3>
+					<p class="todo">TODO: optimizely (almost) got me fired etc.</p>
+					<div class="fragment">
+						<blockquote>"Everything should have a <b>value</b>,<br>because everything has a cost"</blockquote>
+						<p class="subtitle bottom-left smaller">Tim Kadlec - freelance #webperf god</p>
+					</div>
 				</section>
 			</section>
 			<section data-lvl="2" data-desc="Report on them">
@@ -195,92 +313,127 @@
 					<h2>Measure them and Report on them</h2>
 				</section>
 				<section data-lvl="3" data-desc="CSP Report-Only (report-uri)">
-					content
+					<h3>Content Security Policy 👮‍♀️</h3>
+					<p>(report-only)</p>
+					<p>Browsers (and <a href="https://report-uri.io">report-uri.io</a> have done the hard work for us!</p>
 				</section>
 				<section data-lvl="3" data-desc="Synthetic Monitoring (catchpoint)">
-					content
+					<h3>Synthetic Testing 🤖</h3>
+					<!--<p>Issues can be ⚡️ quick</p>-->
+					<p class="todo">TODO: synthetic tests with good third-party analysis</p>
 				</section>
 				<section data-lvl="3" data-desc="RUM (with limitations)">
-					content
+					<h3>RUM 🥃</h3>
+					<p>The <b>best</b> way to monitor resources, even with its limitations</p>
+				</section>
+				<section data-lvl="3" data-desc="RUM (with limitations)">
+					<h4>🥃 Waterfalls</h4>
+					<p class="todo">TODO: aggregate waterfall video</p>
 				</section>
 			</section>
 			<section data-lvl="2" data-desc="Protect ourselves">
-				<section data-lvl="2" data-desc="Find out what’s there">
-					<h2>Defend ourselves</h2>
+				<section data-lvl="2">
+					<h2>Defend ourselves 🤼‍♀️</h2>
 				</section>
 				<section data-lvl="3" data-desc="CSP ">
-					content
+					<h3>Content Security Policy 👮‍♀️</h3>
 				</section>
 				<section data-lvl="3" data-desc="SRI">
-					content
+					<h3>Sub-resource Integrity 🔍</h3>
+					<pre><code class="hlhtml" data-trim contenteditable>
+<link rel="stylesheet">
+	href="//maxcdn.bootstrapcdn.com/.../bootstrap.min.css"
+	integrity="
+		sha256-8EtRe6XWoFEEhWiaPkLaw...=
+		sha512-/5KWJw2mvMO2ZM5fndVxU...=
+	"
+	
+	crossorigin="anonymous"/>
+					</code></pre>
+					<pre><code class="hljs" data-trim contenteditable>
+<script src="//ajax.googleapis.com/.../jquery.min.js"
+	integrity="
+		sha256-ivk71nXhz9nsyFDoYoGf2...=
+		sha512-7aMbXH03HUs6zO1R+pLye...=
+		"
+		
+	crossorigin="anonymous">
+</script>
+</code></pre>
 				</section>
 				<section data-lvl="3" data-desc="Service Worker">
-					content
+					<h3>Service Worker 🧚‍♀️</h3>
 				</section>
 				<section data-lvl="3" data-desc="Self-hosting / Proxying">
-					content
+					<h3>Self-hosting / Proxying ☔️</h3>
 				</section>
 			</section>
 			<section>
 			<section data-lvl="2" data-desc="Have a third-party policy">
-				<h2>What's your Third-party policy?</h2>
+				<h2>Have a third-party policy 💼</h2>
+				<ul class="fragment">
+					<li>What does it do</li>
+					<li>Who owns it</li>
+					<li>Who uses the data</li>
+					<li>How much is it worth</li>
+					<li>What’s the impact on the site</li>
+					<li>How do you remove it</li>
+				</ul>				
 			</section>
-			<section data-lvl="2" data-desc="Have a third-party policy">
-					What does it do
-					Who owns it
-					Who uses the data
-					How much is it worth
-					What’s the impact on the site
-					How do you remove it					
-			</section>
-		</section>
 			<section data-lvl="2" data-desc="Share the data with martech etc.">
-				content
+				<h2>Share with other teams! 🗣</h3>
+				<p class="todo">TODO: dashboards, scorecards etc.</p>-
+			</section>
 			</section>
 			<section data-lvl="1" data-desc="Conclusion">
-				content
+				<section data-lvl="2">
+					<h2>Conclusion</h2>
+				</section>
 				<section data-lvl="2" data-desc="Third-party content may be a weak link, but it's here to stay">
-					content
+					<h3>Third-party content may be a weak link</h3>
+					<h2>But it's here to stay</h2>
 				</section>
 				<section data-lvl="2" data-desc="There are four things we need to do as engineers:">
-					content
+					<h3>Four things we can do to help:</h3>
 				</section>
 				<section data-lvl="3" data-desc="Know what's there">
-					content
+					<h4>Know what's there</h4>
+					<ul>
+						<li>...</li>
+					</ul>
 				</section>
 				<section data-lvl="3" data-desc="Know the impact">
-					content
+					<h4>Know the impact</h4>
+					<ul>
+						<li>...</li>
+					</ul>
 				</section>
 				<section data-lvl="3" data-desc="Measure them">
-					content
+					<h4>Measure them</h4>
+					<ul>
+						<li>...</li>
+					</ul>
 				</section>
 				<section data-lvl="3" data-desc="Protect ourselves">
-					content
+					<h4>Have a solid defense</h4>
+					<ul>
+						<li>...</li>
+					</ul>
 				</section>
 				<section data-lvl="3" data-desc="Share data with other teams!">
 					<h2>Share data with other teams!</h2>
 				</section>
-				<section>
-					<h1>Thank you, and good luck!</h1>
-					<p>Simon Hearne</p>
-					<p>webperf.ninja/tools</p>
-					<p>simonhearne.github.io/weak-links</p>
 				</section>
-
-
-
-
-
 				<section>
-					<h2>Some assumptions...</h2>
-					<ul>
-						<li class="fragment">We aren't in (commercial) control</li>
-						<li class="fragment">We care about site speed</li>
-						<li>test</li>
-					</ul>
+					<h1>Thank you,<br>good luck!</h1>
+					<div class="align-container" style="width:75%;margin: 0 auto;">
+						<div class="left-align" style="text-align:left;">
+							<p>🚴‍♂️ Simon Hearne</p>
+							<p>🛠 webperf.ninja/tools</p>
+							<p>🖥 simonhearne.github.io/weak-links</p>
+						</div>
+					</div>
 				</section>
-
-
 		</div>
 		<p class="subtitle top-right">@SimonHearne</p>
 	</div>
@@ -292,16 +445,7 @@
 		Reveal.initialize({
 			transition: 'none',
 			history: 'true',
-			dependencies: [{
-					src: 'plugin/markdown/marked.js'
-				},
-				{
-					src: 'plugin/markdown/markdown.js'
-				},
-				{
-					src: 'plugin/notes/notes.js',
-					async: true
-				},
+			dependencies: [
 				{
 					src: 'plugin/highlight/highlight.js',
 					async: true,

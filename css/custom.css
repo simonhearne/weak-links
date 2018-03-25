@@ -19,3 +19,6 @@ p.smaller {
 p.smallest {
   font-size: 50%;
 }
+p.todo {
+  background: goldenrod;
+}
