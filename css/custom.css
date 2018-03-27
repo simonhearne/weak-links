@@ -85,3 +85,20 @@ code.compact {
 blockquote.big {
   font-size:130%;
 }
+
+.progress {
+  height: 10px !IMPORTANT;
+}
+
+.spinning {
+  -webkit-animation: rotation 2s infinite linear;
+}
+
+@-webkit-keyframes rotation {
+  from {
+      -webkit-transform: rotate(0deg);
+  }
+  to {
+      -webkit-transform: rotate(359deg);
+  }
+}
