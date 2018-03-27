@@ -5,8 +5,8 @@ p.subtitle {
 }
 p.top-right {
   position: fixed;
-  top: 0px;
   right: 40px;
+  top: 40px;
 }
 p.bottom-left {
   position: fixed;
