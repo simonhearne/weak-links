@@ -23,6 +23,10 @@
 		document.getElementsByTagName('head')[0].appendChild(link);
 	</script>
 	<script src="lib/js/d3.v4.min.js"></script>
+	<script src="lib/js/vega@3.2.1"></script>
+	<script src="lib/js/vega-lite@2.3.1"></script>
+	<script src="lib/js/vega-embed@3.2.0"></script>
+
 </head>
 <!-- TODO
 re-make andy's chart with RUM data
@@ -40,38 +44,15 @@ add request map to impact
 			<section data-state="title-slide">
 				<h1>Third-Party Content</h1>
 				<h2>The weak link in your chain?</h2>
-				<p class="subtitle smaller">Simon Hearne - Principle Engineer @ Akamai</p>
+				<p class="smaller" style="text-align: center;">Simon Hearne - Principle Engineer @ Akamai</p>
 				<p class="subtitle bottom-left">#perfmatters conf 2018</p>
 			</section>
-			<!--
-			<section data-state="main-slide">
-				<h2>Other metaphors...</h2>
-				<div class="center-container-1">
-					<div class="center-container-2">
-						<div class="centered align-left">
-							<p class="fragment">👶 Parasites</p>
-							<p style="opacity:0;">📉 Those stocks...</p>
-							<p style="opacity:0;">🤡 That person at all the parties...</p>
-						</div>
-					</div>
-				</div>
-			</section>
-			<section data-state="main-slide">
-				<h2>Other metaphors...</h2>
-				<div class="center-container-1">
-					<div class="center-container-2">
-						<div class="centered align-left">
-							<p>🦇 Parasites</p>
-							<p class="fragment">📉 Those stocks...</p>
-							<p class="fragment">🤡 That person at all the parties...</p>
-						</div>
-					</div>
-				</div>
-			</section>
-		-->
 			<section data-state="main-slide">
 				<h4>AKA</h4>
 				<h2>Bad people<br>doing horrible things<br>to good sites</h2>
+			</section>
+			<section>
+				<video width="40%" muted src="videos/reuben.mp4" autoplay="true" loop="true"></video>
 			</section>
 			<section data-state="main-slide">
 				<!-- TODO: the chain? write code, test, deploy to staging, deploy to live, third-parties...-->
@@ -140,26 +121,34 @@ add request map to impact
 				<section data-state="main-slide">
 					<h4>but what about the</h4>
 					<h1>Risk?</h1>
-					<h2 class="spinning">🎲</h2>
+					<h2>🎲</h2>
 				</section>
 				<section data-state="tertiary-slide">
-					<h3>Availability Heuristic 101 🤔</h3>
+					<h3>PS: Availability Heuristic 101 🤔</h3>
 					<img src="images/availability-bias.jpg"></img>
 				</section>
 				<section data-state="tertiary-slide">
-					<h3>Availability Heuristic 101 🤔</h3>
+					<h3>PS: Availability Heuristic 101 🤔</h3>
 					<ul class="no-bullets">
 						<li>Remember when Facebook went down?</li>
 						<li class="fragment">Remember when Disqus went down?</li>
 						<li class="fragment">Remember when Maxymiser went down?</li>
 						<li class="fragment">Remember when
 							<b>Dyn</b> went down?</li>
+						<li class="fragment">left-pad 😞</li>
 				</section>
 			</section>
 			<section>
 				<section data-state="secondary-slide">
 					<h4>Risk 1:</h4>
 					<h2>Malicious code injection 👹</h2>
+				</section>
+				<section data-state="tertiary-slide">
+					<h3>How much of your code has vulnerabilities?</h3>
+					<img src="images/vulnerable.png" />
+					<p class="subtitle bottom-left smallest">
+						<a href="https://beta.httparchive.org/reports/state-of-the-web#pctVuln">beta.httparchive.org/reports/state-of-the-web#pctVuln</a>
+					</p>
 				</section>
 				<section data-state="tertiary-slide">
 					<h3>CryptoJacking</h3>
@@ -218,25 +207,28 @@ add request map to impact
 				</section>
 				<section data-state="tertiary-slide">
 					<h3>Do they fail gracefully?</h3>
-					<p class="todo">TODO: SPoF</p>
+					<video src="videos/spof.mp4" autoplay="false" controls="true"></video>
 					<p>👎</p>
 				</section>
 				<section data-state="tertiary-slide">
 					<h3>Are they using a CDN?</h3>
-					<p class="fragment">Is it as good as yours?</p>
-					<p class="todo">TODO: e.g. optimix.asia on akamai</p>
+					<h4>(&amp; is it as good as yours?)</h4>
+					<img src="images/optimix.png"/>
 				</section>
 				<section data-state="tertiary-slide">
 					<h3>What is their SLA for availability?</h3>
-					<p class="fragment">Is it as good as yours?</p>
-					<p class="todo">TODO: are there any public slas?</p>
+					<h4>(&amp; is it as good as yours?)</h4>
+					<img width="50%" src="images/sla.png"/>
+					<p class="subtitle bottom-left smaller"><a href="https://help.optimizely.com/Account_Settings/Optimizely_support_plans">help.optimizely.com/Account_Settings/Optimizely_support_plans</a></p>
 				</section>
 				<section data-state="tertiary-slide">
 					<h3>Availability to the user</h3>
-					<p class="fragment">Government / geo blocking</p>
-					<p class="fragment">Ad blocking</p>
-					<p class="fragment">Tracker blocking</p>
-					<p class="fragment">Random crap</p>
+					<ul>
+						<li class="fragment">Government / geo blocking</li>
+						<li class="fragment">Ad blocking</li>
+						<li class="fragment">Tracker blocking</li>
+						<li class="fragment">Random crap</li>
+					</ul>
 				</section>
 			</section>
 			<section>
@@ -269,7 +261,7 @@ document.write("&lt;div
 &lt;script src="//s7.addthis.com/addthis_widget.js" async&gt;&lt;/script&gt;
 					</code></pre>
 					<!--<img style="filter:invert(1);" width="100px" class="naked" src="images/curved-arrow.svg"/>-->
-					<h4>How do you know when it changes? </h4>
+					<h5>How do you know when it changes?</h5>
 					<p class="subtitle bottom-left smallest">
 						<a href="https://www.addthis.com">www.addthis.com</a>
 					</p>
@@ -316,229 +308,107 @@ document.write("&lt;div
 				<section data-state="tertiary-slide">
 					<h3>The web is variable</h3>
 					<div style="width:900px;height:400px;" id="svg-container-1"></div>
-					<script>
-						var width = 900;
-						var height = 400;
-						var barWidth = 30;
-					  
-						var margin = {top: 20, right: 10, bottom: 20, left: 10};
-					  
-						var width = width - margin.left - margin.right,
-							height = height - margin.top - margin.bottom;
-					  
-						var totalWidth = width + margin.left + margin.right;
-						var totalheight = height + margin.top + margin.bottom;
-					  
-						// Generate five 100 count, normal distributions with random means
-						var groupCounts = {};
-						var globalCounts = [];
-						var meanGenerator = d3.randomUniform(10);
-						for(i=0; i<7; i++) {
-						  var randomMean = meanGenerator();
-						  var generator = d3.randomNormal(randomMean);
-						  var key = i.toString();
-						  groupCounts[key] = [];
-					  
-						  for(j=0; j<100; j++) {
-							var entry = generator();
-							groupCounts[key].push(entry);
-							globalCounts.push(entry);
-						  }
-						}
-					  
-						// Sort group counts so quantile methods work
-						for(var key in groupCounts) {
-						  var groupCount = groupCounts[key];
-						  groupCounts[key] = groupCount.sort(sortNumber);
-						}
-					  
-						// Setup a color scale for filling each box
-						var colorScale = d3.scaleOrdinal(d3.schemeCategory20)
-						  .domain(Object.keys(groupCounts));
-					  
-						// Prepare the data for the box plots
-						var boxPlotData = [];
-						for (var [key, groupCount] of Object.entries(groupCounts)) {
-					  
-						  var record = {};
-						  var localMin = d3.min(groupCount);
-						  var localMax = d3.max(groupCount);
-					  
-						  record["key"] = key;
-						  record["counts"] = groupCount;
-						  record["quartile"] = boxQuartiles(groupCount);
-						  record["whiskers"] = [localMin, localMax];
-						  record["color"] = colorScale(key);
-					  
-						  boxPlotData.push(record);
-						}
-						console.log(boxPlotData);
-					  
-						// Compute an ordinal xScale for the keys in boxPlotData
-						var xScale = d3.scalePoint()
-						  .domain(Object.keys(groupCounts))
-						  .rangeRound([0, width])
-						  .padding([0.5]);
-					  
-						// Compute a global y scale based on the global counts
-						var min = d3.min(globalCounts);
-						var max = d3.max(globalCounts);
-						var yScale = d3.scaleLinear()
-						  .domain([min, max])
-						  .range([0, height]);
-					  
-						// Setup the svg and group we will draw the box plot in
-						var svg = d3.select("#svg-container-1").append("svg")
-						  .attr("width", totalWidth)
-						  .attr("height", totalheight)
-						  .append("g")
-						  .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
-					  
-						// Move the left axis over 25 pixels, and the top axis over 35 pixels
-						var axisG = svg.append("g").attr("transform", "translate(25,0)");
-						var axisTopG = svg.append("g").attr("transform", "translate(35,0)");
-					  
-						// Setup the group the box plot elements will render in
-						var g = svg.append("g")
-						  .attr("transform", "translate(20,5)");
-					  
-						// Draw the box plot vertical lines
-						var verticalLines = g.selectAll(".verticalLines")
-						  .data(boxPlotData)
-						  .enter()
-						  .append("line")
-						  .attr("x1", function(datum) {
-							  return xScale(datum.key) + barWidth/2;
+					<p class="subtitle bottom-left smaller">Top 250 resources from HTTP Archive</p>
+					<script type="text/javascript">
+						var yourVlSpec = {
+						  "$schema": "https://vega.github.io/schema/vega-lite/v2.0.json",
+						  "description": "A simple bar chart with embedded data.",
+						  "data": {
+							"url": "data/httparchive-resource-variability.json",
+							"format": {
+								"type": "json"
 							}
-						  )
-						  .attr("y1", function(datum) {
-							  var whisker = datum.whiskers[0];
-							  return yScale(whisker);
-							}
-						  )
-						  .attr("x2", function(datum) {
-							  return xScale(datum.key) + barWidth/2;
-							}
-						  )
-						  .attr("y2", function(datum) {
-							  var whisker = datum.whiskers[1];
-							  return yScale(whisker);
-							}
-						  )
-						  .attr("stroke", "#000")
-						  .attr("stroke-width", 1)
-						  .attr("fill", "none");
-					  
-						// Draw the boxes of the box plot, filled in white and on top of vertical lines
-						var rects = g.selectAll("rect")
-						  .data(boxPlotData)
-						  .enter()
-						  .append("rect")
-						  .attr("width", barWidth)
-						  .attr("height", function(datum) {
-							  var quartiles = datum.quartile;
-							  var height = yScale(quartiles[2]) - yScale(quartiles[0]);
-							  return height;
-							}
-						  )
-						  .attr("x", function(datum) {
-							  return xScale(datum.key);
-							}
-						  )
-						  .attr("y", function(datum) {
-							  return yScale(datum.quartile[0]);
-							}
-						  )
-						  .attr("fill", function(datum) {
-							return datum.color;
-							}
-						  )
-						  .attr("stroke", "#000")
-						  .attr("stroke-width", 1);
-					  
-						// Now render all the horizontal lines at once - the whiskers and the median
-						var horizontalLineConfigs = [
-						  // Top whisker
-						  {
-							x1: function(datum) { return xScale(datum.key) },
-							y1: function(datum) { return yScale(datum.whiskers[0]) },
-							x2: function(datum) { return xScale(datum.key) + barWidth },
-							y2: function(datum) { return yScale(datum.whiskers[0]) }
 						  },
-						  // Median line
-						  {
-							x1: function(datum) { return xScale(datum.key) },
-							y1: function(datum) { return yScale(datum.quartile[1]) },
-							x2: function(datum) { return xScale(datum.key) + barWidth },
-							y2: function(datum) { return yScale(datum.quartile[1]) }
-						  },
-						  // Bottom whisker
-						  {
-							x1: function(datum) { return xScale(datum.key) },
-							y1: function(datum) { return yScale(datum.whiskers[1]) },
-							x2: function(datum) { return xScale(datum.key) + barWidth },
-							y2: function(datum) { return yScale(datum.whiskers[1]) }
-						  }
-						];
-					  
-						for(var i=0; i < horizontalLineConfigs.length; i++) {
-						  var lineConfig = horizontalLineConfigs[i];
-					  
-						  // Draw the whiskers at the min for this series
-						  var horizontalLine = g.selectAll(".whiskers")
-							.data(boxPlotData)
-							.enter()
-							.append("line")
-							.attr("x1", lineConfig.x1)
-							.attr("y1", lineConfig.y1)
-							.attr("x2", lineConfig.x2)
-							.attr("y2", lineConfig.y2)
-							.attr("stroke", "#000")
-							.attr("stroke-width", 1)
-							.attr("fill", "none");
-						}
-					  
-						// Setup a scale on the left
-						var axisLeft = d3.axisLeft(yScale);
-						axisG.append("g")
-						  .call(axisLeft);
-					  
-						// Setup a series axis on the top
-						var axisTop = d3.axisTop(xScale);
-						axisTopG.append("g")
-						  .call(axisTop);
-					  
-						  function boxQuartiles(d) {
-							return [
-							  d3.quantile(d, .25),
-							  d3.quantile(d, .5),
-							  d3.quantile(d, .75)
-							];
-						  }
-						  
-						// Perform a numeric sort on an array
-						function sortNumber(a,b) {
-						  return a - b;
-						}
-					  
-						</script>
-					<p class="todo">TODO: distributions from HTTP archive?</p>
+						  "mark": "point",
+							"encoding": {
+								"x": {
+									"field": "freq",
+									"type": "quantitative"
+								},
+								"y": {
+									"field": "p95",
+									"type": "quantitative",
+									"axis": {
+										"title": "95th Percentile Load Duration"
+									}
+								},
+								"size": {
+									"field": "freq",
+									"type": "quantitative"
+								},
+
+							}
+						};
+						var opts = {
+							"actions": false,
+							"width": 600,
+							"height": 400,
+							"config": {
+								"autosize": "pad",
+								"padding": 5,
+								"background": "white"
+							}
+						};
+						vegaEmbed("#svg-container-1", yourVlSpec, opts);
+					  </script>
 				</section>
 				<section data-state="tertiary-slide">
 					<h3>The web is variable</h3>
-					<h4>(and so are third-parties</h4>
-					<p class="todo">TODO: Analysis from lambda_rt here</p>
+					<div style="width:900px;height:400px;" id="svg-container-2"></div>
+					<script type="text/javascript">
+						var yourVlSpec = {
+						  "$schema": "https://vega.github.io/schema/vega-lite/v2.0.json",
+						  "description": "A simple bar chart with embedded data.",
+						  "data": {
+							"url": "data/rum-resource-variability.json",
+							"format": {
+								"type": "json"
+							}
+						  },
+						  "mark": "point",
+							"encoding": {
+								"x": {
+									"field": "FREQ",
+									"type": "quantitative"
+								},
+								"y": {
+									"field": "P95",
+									"type": "quantitative",
+									"axis": {
+										"title": "95th Percentile Load Duration"
+									}
+								},
+								"size": {
+									"field": "FREQ",
+									"type": "quantitative"
+								},
+
+							}
+						};
+						var opts = {
+							"actions": false,
+							"width": 600,
+							"height": 400,
+							"config": {
+								"autosize": "pad",
+								"padding": 5,
+								"background": "white"
+							}
+						};
+						vegaEmbed("#svg-container-2", yourVlSpec, opts);
+					  </script>
+					<p class="subtitle bottom-left smaller">Top 250 resources from Akamai mPulse</p>
 				</section>
 				<section data-state="tertiary-slide">
-					<h3>Resource Timing to the rescue!</h3>
+					<h3>Resource Timing is the hero we need</h3>
 					<img src="images/resource-timing-overview-1.png">
 					<p class="subtitle bottom-left smaller">https://www.w3.org/TR/resource-timing-1/</p>
 				</section>
 				<section data-state="tertiary-slide">
-					<h3>Resource Timing to the rescue?</h3>
+					<h3>Resource Timing is the hero we need</h3>
 					<img src="images/resource-timing-overview-2.png">
-					<p>not without Timing-Allow-Origin 🙈</p>
-					<p class="subtitle bottom-left smaller">https://www.w3.org/TR/resource-timing-1/</p>
+					<h5>not without Timing-Allow-Origin 🙈</h5>
+					<p class="subtitle bottom-left smaller"><a href="https://nicj.net/resourcetiming-visibility-third-party-scripts-ads-and-page-weight/">nicj.net/resourcetiming-visibility-third-party-scripts-ads-and-page-weight/</a></p>
 				</section>
 				<section data-state="tertiary-slide">
 					<h3>Resource Timing won't save us</h3>
@@ -550,12 +420,13 @@ document.write("&lt;div
 									<b>72%</b> of third-party content</p>
 								<p class="fragment">🙈 only the first 150 requests *</p>
 								<p class="fragment">🙈 no data on old iDevices</p>
+								<p class="fragment">🙈 no data for cross-origin iframes</p>
 							</div>
 						</div>
 					</div>
 					<p class="subtitle bottom-left smaller">
 						<a href="https://developer.akamai.com/blog/2017/07/26/measuring-performance-third-party-contributors/">developer.akamai.com/blog/2017/07/26/measuring-performance-third-party-contributors/</a>
-						<br>* can be increased and cleared
+						<br>* limit can be increased per pageview
 					</p>
 				</section>
 			</section>
@@ -567,15 +438,18 @@ document.write("&lt;div
 				</section>
 				<section data-state="tertiary-slide">
 					<h3>CPU is our biggest bottleneck ⏳</h3>
+					<img src="images/cpu-mobile.png"/>
 				</section>
 				<section data-state="tertiary-slide"n>
 					<h3>Who's policing the third-parties?</h3>
-					<p class="todo">TODO: CPU abuser</p>
+					<img src="images/cpu-abuser.png"/>
+					<p class="subtitle bottom-left smaller"><a href="https://github.com/jpvincent/3rd-party-cpu-abuser">github.com/jpvincent/3rd-party-cpu-abuser</a></p>
 				</section>
 				<section data-state="tertiary-slide">
 					<h3>Variable CPU time</h3>
 					<h4>on synthetic agents!</h4>
 					<img src="images/third-party-cpu-httparchive.jpg" />
+					<p class="subtitle bottom-left smaller"><a href="https://twitter.com/AndyDavies/status/973895262388224000">twitter.com/AndyDavies/status/973895262388224000</a></p>
 				</section>
 				<section data-state="tertiary-slide">
 					<h3>The most frustrating perf bug, ever</h3>
@@ -583,7 +457,8 @@ document.write("&lt;div
 				</section>
 				<section data-state="tertiary-slide">
 					<h3>Who watches the watchmen?</h3>
-					<p class="todo">TODO: Boomerang perf analysis</p>
+					<img src="images/onload-profile-retail-mobile-1.png"/>
+					<p class="subtitle bottom-left smaller"><a href="https://calendar.perfplanet.com/2017/an-audit-of-boomerangs-performance/">calendar.perfplanet.com/2017/an-audit-of-boomerangs-performance/</a></p>
 				</section>
 			</section>
 			<section>
@@ -594,26 +469,22 @@ document.write("&lt;div
 				</section>
 				<section data-state="tertiary-slide">
 					<h3>delaying onload</h3>
-					<p class="todo">TODO: replay optimix.asia example?</p>
-				</section>
-				<section data-state="tertiary-slide">
-					<h3>DNS isn't free</h3>
-					<!-- TODO: Boomerang perf analysis -->
+					<img width="60%" src="images/onload-delay.png"/>
 				</section>
 				<section data-state="tertiary-slide">
 					<h3>keeping the radio awake</h3>
-					<img src="images/clicktale.png"/>
+					<img width="70%" src="images/clicktale.png"/>
 				</section>
 			</section>
 			<section data-state="main-slide">
-				<h2>We have little control over which are used</h2>
+				<h2>We have little control<br>over which are used</h2>
 				<p>But there are things we can do...</p>
 			</section>
 			<section>
 				<section data-state="secondary-slide">
 					<h4>Stage 1:</h4>
 					<h2>Find out what's there</h2>
-					<img src="images/adblock.png"/>
+					<img width="50%" src="images/adblock.png"/>
 					<p class="subtitle bottom-left smaller">
 						<a href="http://fortune.com/2015/07/08/adblock-data/">fortune.com/2015/07/08/adblock-data/</a>
 					</p>
@@ -627,27 +498,13 @@ document.write("&lt;div
 				</section>
 				<section data-state="tertiary-slide">
 					<h3>Synthetic Testing (webpagetest)</h3>
-					<video src="videos/fjson.mov" />
+					<video controls="true" src="videos/fjson.mov" />
 					<p class="subtitle bottom-left smaller">
 						<a href="https://www.webpagetest.org/result/180326_QK_333a4d124f5dde54debc4996177e34f4/1/domains/">webpagetest.org/</a>
 					</p>
 				</section>
-				<section data-state="tertiary-slide">
-					<h3 class="light-background">Request Maps</h3>
-					<video src="videos/requestmap.mov"/>
-					<p class="subtitle bottom-left smaller">
-						<a href="https://github.com/simonhearne/requestmap/">github.com/simonhearne/requestmap/</a> |
-						<a href="https://requestmap.webperf.tools/">requestmap.webperf.tools</a>
-					</p>
-				</section>
-				<section data-background-iframe="http://requestmap.herokuapp.com/render/180326_QK_333a4d124f5dde54debc4996177e34f4/?minimalist=1&dark=1&group=thirdparty.category&legend=0"
-				    data-background-interactive>
-					<!--<section data-background-iframe="http://requestmap.webperf.tools/headless.php?id=180326_QK_333a4d124f5dde54debc4996177e34f4" data-background-interactive>-->
-					<h3 class="light-background">Request Maps</h3>
-					<p class="subtitle bottom-left smaller">
-						<a href="https://github.com/simonhearne/requestmap/">github.com/simonhearne/requestmap/</a> |
-						<a href="https://requestmap.webperf.tools/">requestmap.webperf.tools</a>
-					</p>
+				<section data-state="tertiary-slide" data-background-video="videos/requestmap.mov">
+					
 				</section>
 				<section data-state="tertiary-slide">
 					<!--<p>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br></p>-->
@@ -659,8 +516,8 @@ document.write("&lt;div
 					</p>
 				</section>
 				<section data-state="tertiary-slide">
-					<h3>Real User Monitoring 1 🥃</h3>
-					<video controls="no" autoplay="true" loop="true" name="Circle Packing" src="videos/circlepacking.mov"></video>
+					<h3>Real User Monitoring 🥃</h3>
+					<video width="60%" controls="no" autoplay="true" loop="true" name="Circle Packing" src="videos/circlepacking.mov"></video>
 					<p class="subtitle bottom-left smaller">Akamai mPulse</p>
 				</section>
 			</section>
@@ -675,26 +532,31 @@ document.write("&lt;div
 				</section>
 				<section data-state="tertiary-slide">
 					<h3>Synthetic Testing (made easy)</h3>
-					<iframe scrolling="no" class="iframe-big" data-src="http://third-party-impact.herokuapp.com/domains/?test=180326_MN_72416b0fd72805f56d47e094bdcd188a"></iframe>
+					<img src="images/tpi1.png"/>
 					<p class="subtitle bottom-left smaller">
 						<a href="https://github.com/simonhearne/third-party-impact/">github.com/simonhearne/third-party-impact/</a>
 					</p>
 				</section>
 				<section data-state="tertiary-slide">
 					<h3>Synthetic Testing (made easy)</h3>
-					<iframe scrolling="no" class="iframe-big" data-src="http://third-party-impact.herokuapp.com/result/?test=180326_MN_72416b0fd72805f56d47e094bdcd188a"></iframe>
+					<img src="images/tpi2.png"/>
 					<p class="subtitle bottom-left smaller">
 						<a href="https://github.com/simonhearne/third-party-impact/">github.com/simonhearne/third-party-impact/</a>
 					</p>
 				</section>
 				<section data-state="tertiary-slide">
 					<h3>Resource Impact from Synthetics 🤖</h3>
-					<img src="images/catchpoint.png" />
-					<p class="subtitle bottom-left smaller">#datavis brought to you by Catchpoint!</p>
+					<img src="images/catchpoint.jpg" />
+					<p class="subtitle bottom-left smaller"><a href="http://blog.catchpoint.com/2018/01/10/using-catchpoint-to-analyze-third-party-impact/">blog.catchpoint.com/2018/01/10/using-catchpoint-to-analyze-third-party-impact/</a></p>
+				</section>
+				<section data-state="tertiary-slide">
+					<h3>Resource Impact from Synthetics 🤖</h3>
+					<video data-src="videos/speedcurve.mp4" width="70%" autoplay></video>
+					<p class="subtitle bottom-left smaller"><a href="https://speedcurve.com/blog/ux-focus-for-waterfalls-and-third-parties/">speedcurve.com/blog/ux-focus-for-waterfalls-and-third-parties/</a></p>
 				</section>
 				<section data-state="tertiary-slide">
 					<h3>Resource Impact from RUM</h3>
-					<video controls="no" name="Resource Impact Infographic" src="videos/infographic.mov"></video>
+					<video autoplay name="Resource Impact Infographic" src="videos/infographic.mov"></video>
 				</section>
 				<section data-state="tertiary-slide">
 					<h3>Advertising Partners</h3>
@@ -707,6 +569,7 @@ document.write("&lt;div
 					</p>
 					<p class="subtitle bottom-left smaller">Large US publishing company</p>
 				</section>
+				<!--
 				<section data-state="tertiary-slide">
 					<h3>Analytics</h3>
 					<p class="todo">TODO: add RIS results for analytics</p>
@@ -715,10 +578,12 @@ document.write("&lt;div
 					<h3>Multivariate Testing / 'Optimization'</h3>
 					<p class="todo">TODO: add RIS results for optimizely</p>
 				</section>
+			-->
 				<section data-state="tertiary-slide">
 					<h3>LongTasks API</h3>
-					<p class="todo">TODO: long tasks info</p>
+					<img src="images/longtasks.png"/>
 				</section>
+				
 				<section data-state="tertiary-slide">
 					<h3>Bonus: determine the value!</h3>
 					<img src="images/optimizely-test.png" />
@@ -742,15 +607,31 @@ document.write("&lt;div
 				<section data-state="tertiary-slide">
 					<h3>Content Security Policy 👮‍</h3>
 					<h4>(report-only)</h4>
-					<p>Browsers have done the hard work for us!</p>
-					<p class="todo">TODO: report-uri screenshot?</p>
-					<p>
+					<pre><code style="font-size:80%;" class="hljs">
+{
+	"csp-report": {
+		"document-uri": "https://yourwebsite.com/",
+		"referrer": "",
+		"violated-directive": "style-src",
+		"effective-directive": "style-src",
+		"original-policy": "",
+		"disposition": "enforce",
+		"blocked-uri": "inline",
+		"line-number": 4,
+		"column-number": 3,
+		"source-file": "https://static.hotjar.com/c/hotjar-730716.js?sv=6",
+		"status-code": 0,
+		"script-sample": ""
+	}
+}</code></pre>
+					<p class="subtitle bottom-left smaller">
 						<a href="https://report-uri.com">report-uri.com</a>
 					</p>
 				</section>
 				<section data-state="tertiary-slide">
 					<h3>Synthetic Testing 🤖</h3>
-					<p class="todo">TODO: synthetic tests with good third-party analysis</p>
+					<img src="images/catchpoint.png" />
+					<p class="subtitle bottom-left smaller"><a href="http://blog.catchpoint.com/2018/01/10/using-catchpoint-to-analyze-third-party-impact/">blog.catchpoint.com/2018/01/10/using-catchpoint-to-analyze-third-party-impact/</a></p>
 				</section>
 				<section data-state="tertiary-slide">
 					<h3>RUM 🥃</h3>
@@ -767,16 +648,20 @@ document.write("&lt;div
 			<section data-state="secondary-slide">
 				<section data-state="secondary-slide">
 					<h4>Stage 4:</h4>
-					<h2>Defend ourselves 🤼‍♀️</h2>
+					<h2>Defend ourselves 🤼‍</h2>
 				</section>
 				<section data-state="tertiary-slide">
 					<h3>Content Security Policy 👮‍️</h3>
-					<img src="images/xss_reporting.png" />https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/explained.md
-				</section>
-				<section data-state="tertiary-slide" data-background-iframe="https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/explained.md">
-					<h3>Content Security Policy 👮‍️</h3>
+					<img src="images/csp.png"/>
 					<p class="subtitle bottom-left smallest">
-						<a href="https://github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/explained.md">github.com/nico3333fr/CSP-useful/blob/master/csp-wtf/explained.md</a>
+						<a href="https://caniuse.com/#feat=contentsecuritypolicy2">caniuse.com/#feat=contentsecuritypolicy2</a>
+					</p>
+				</section>
+				<section data-state="tertiary-slide">
+					<h3>Content Security Policy 👮‍️</h3>
+					<img src="images/xss_reporting.png" />
+					<p class="subtitle bottom-left smaller">
+						<a href="https://report-uri.com">report-uri.com</a>
 					</p>
 				</section>
 				<section data-state="tertiary-slide">
@@ -824,9 +709,15 @@ document.write("&lt;div
 								<p class="fragment">👍 Malicious Code</p>
 								<p class="fragment">👍 Untested Changes</p>
 								<p class="fragment">👎 Maintenance</p>
+								<div class="fragment">
+								<p >⭐️ Signature-based Restrictions...*</p>
+								<p class="subtitle bottom-left smallest">
+									<a href="https://github.com/mikewest/signature-based-sri">github.com/mikewest/signature-based-sri</a>
+								</p>
 							</div>
 						</div>
 					</div>
+					
 				</section>
 				<section data-state="tertiary-slide">
 					<h3>Service Worker 💪</h3>
@@ -861,21 +752,30 @@ self.addEventListener('fetch', function(event) {
 						<div class="center-container-2">
 							<div class="centered align-left">
 								<p class="fragment">👍 CDN / Network outages</p>
+								<p class="fragment">👎 Not on first pageview</p>
 								<p class="fragment">👎 Maintenance</p>
-								<div class="fragment">
-									<p>👎 You can critically injure your site</p>
-									<video src="videos/ko.mp4" autoplay="true" loop="true"></video>
-								</div>
+								<p class="fragment">👎 You can break your site</p>
 							</div>
 						</div>
 					</div>
 				</section>
 				<section data-state="tertiary-slide">
 					<h3>Self-hosting / Proxying ☔️</h3>
-					<p class="todo">TODO: optimizely self-hosting?</p>
-					<p class="todo">TODO: Google fonts self-hosting?</p>
+					<img src="images/webfonts-helper.png"/>
+					<p class="subtitle bottom-left smaller"><a href="https://google-webfonts-helper.herokuapp.com/fonts">google-webfonts-helper.herokuapp.com/fonts</a></p>
 				</section>
 				<section data-state="tertiary-slide">
+					<h3>Self-hosting / Proxying ☔️</h3>
+					<img src="images/self-host.png"/>
+					<p class="subtitle bottom-left smaller"><a href="https://vwo.com/knowledge/host-vwo-javascript-files-on-your-server/">vwo.com/knowledge/host-vwo-javascript-files-on-your-server/</a></p>
+				</section>
+				<section data-state="tertiary-slide">
+					<h3>Self-hosting / Proxying ☔️</h3>
+					<img width="60%" src="images/proxy.png"/>
+					<p class="subtitle bottom-left smallest"><a href="https://community.akamai.com/community/web-performance/blog/2016/01/13/5-ways-to-prevent-slow-3rd-party-front-end-services">community.akamai.com/community/web-performance/blog/2016/01/13/5-ways-to-prevent-slow-3rd-party-front-end-services</a></p>
+				</section>
+				<section data-state="tertiary-slide">
+					<h3>Self-hosting / Proxying ☔️</h3>
 					<div class="center-container-1">
 						<div class="center-container-2">
 							<div class="centered align-left">
@@ -893,61 +793,35 @@ self.addEventListener('fetch', function(event) {
 					<h2>Have a third-party policy 💼</h2>
 					<ul class="fragment">
 						<li>What does it do?</li>
-						<li>Who owns it?</li>
-						<li>Who uses the data?</li>
-						<li>How much is it worth?</li>
-						<li>What’s the impact on the site?</li>
+						<li>Who uses it?</li>
+						<li>What’s the risk to the site?</li>
 						<li>How do you remove it?</li>
 					</ul>
 				</section>
-				<section data-state="secondary-slide" data-background-iframe="https://speedcurve.com/demo/thirdparty/?b=chrome&d=30&de=1&ds=1&r=us-west-1&s=299&u=906"
-				    data-background-interactive="true">
-					<h2 class="light-background">Share with other teams! 🗣</h3>
+				<section data-state="secondary-slide" data-background-image="images/speedcurve.png">
+					<h3 class="light-background">Share with other teams! 🗣</h3>
+					<p class="subtitle bottom-left smallest"><a href="https://speedcurve.com/demo/thirdparty/">speedcurve.com/demo/thirdparty/</a></p>
 				</section>
 			</section>
 			<section data-state="main-slide">
-				<section data-state="secondary-slide">
-					<h2>Conclusion</h2>
-				</section>
 				<section data-state="secondary-slide">
 					<h3>Third-party content may be a weak link</h3>
 					<h2>But it's here to stay</h2>
 				</section>
 				<section data-state="secondary-slide">
-					<h3>Four things you can do today:</h3>
-				</section>
-				<section data-state="tertiary-slide">
-					<h4>Know what's there</h4>
+					<h3>Five things you can do today:</h3>
 					<ul>
-						<li>...</li>
+						<li>Know what's there</li>
+						<li>Measure them</li>
+						<li>Have a solid defense</li>
+						<li>Share the data</li>
+						<li>Have third-party policy</li>
 					</ul>
 				</section>
 				<section data-state="tertiary-slide">
-					<h4>Know the impact</h4>
-					<ul>
-						<li>...</li>
-					</ul>
-				</section>
-				<section data-state="tertiary-slide">
-					<h4>Measure them</h4>
-					<ul>
-						<li>...</li>
-					</ul>
-				</section>
-				<section data-state="tertiary-slide">
-					<h4>Have a solid defense</h4>
-					<ul>
-						<li>...</li>
-					</ul>
-				</section>
-				<section data-state="tertiary-slide">
-					<h2>Share data with other teams!</h2>
-					<p class="todo">TODO: Dashboard photo?</p>
-				</section>
-				<section data-state="tertiary-slide">
-					<h2>Homework</h2>
+					<h2>Further reading</h2>
 					<a href="https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/loading-third-party-javascript/#avoid_scripts_that_pollute_the_global_scope">
-						<img src="images/google.png" />
+						<img width="70%" src="images/google.png" />
 					</a>
 				</section>
 			</section>
@@ -956,7 +830,7 @@ self.addEventListener('fetch', function(event) {
 					<br>good luck!</h1>
 				<div class="align-container" style="width:75%;margin: 0 auto;">
 					<div class="left-align" style="text-align:left;">
-						<p>🚴‍♂️ @SimonHearne</p>
+						<p>🚴‍ @SimonHearne</p>
 						<p>🛠 webperf.ninja/tools</p>
 						<p>🖥 simonhearne.github.io/weak-links</p>
 					</div>
