@@ -7,7 +7,12 @@ p.subtitle {
 p.top-right {
   position: fixed;
   right: 40px;
-  top: 40px;
+  top: 60px;
+}
+p.bottom-right {
+  position: fixed;
+  right: 60px;
+  bottom: 40px;
 }
 p.bottom-left {
   position: fixed;
@@ -54,7 +59,7 @@ div.centered{
   text-align: center !IMPORTANT;
 }
 div.controls-arrow {
-  opacity:0.2;
+  opacity:0;
 }
 
 .light-background {

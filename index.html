@@ -28,15 +28,6 @@
 	<script src="lib/js/vega-embed@3.2.0"></script>
 
 </head>
-<!-- TODO
-re-make andy's chart with RUM data
-compare http archive performance with crux
-integrate thirdparty db into thirdparty impact
-create third-party insights?
-sort out this repo... talks/weaklinks?
-add request map to impact
-
--->
 
 <body>
 	<div class="reveal">
@@ -50,9 +41,6 @@ add request map to impact
 			<section data-state="main-slide">
 				<h4>AKA</h4>
 				<h2>Bad people<br>doing horrible things<br>to good sites</h2>
-			</section>
-			<section>
-				<video width="40%" muted src="videos/reuben.mp4" autoplay="true" loop="true"></video>
 			</section>
 			<section data-state="main-slide">
 				<!-- TODO: the chain? write code, test, deploy to staging, deploy to live, third-parties...-->
@@ -187,6 +175,10 @@ add request map to impact
 					</p>
 				</section>
 				<section data-state="tertiary-slide">
+					<h3>Content Delivery Networks</h3>
+					<img width="40%" src="images/amp.png" />
+				</section>
+				<section data-state="tertiary-slide">
 					<h3>Unintentional data collection</h3>
 					<blockquote>website tracking is a "security disaster waiting to happen"</blockquote>
 					<iframe width="560" height="315" data-src="https://www.youtube.com/embed/GJWzNm_dTwc?rel=0&amp;controls=0&amp;showinfo=0&amp;autoplay=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
@@ -240,7 +232,7 @@ add request map to impact
 					<h3>XSS Vulnerabilites</h3>
 					<img src="images/telegraph-xss.png" />
 					<p class="subtitle bottom-left smallest">
-						<a href="https://randywestergren.com/widespread-xss-vulnerabilities-ad-network-code-affecting-top-tier-publishers-retailers/">randywestergren.com/widespread-xss-vulnerabilities-ad-network-code-affecting-top-tier-publishers-retailers/</a>
+						<a href="https://randywestergren.com/widespread-xss-vulnerabilities-ad-network-code-affecting-top-tier-publishers-retailers/">randywestergren.com/widespread-xss-vulnerabilities/</a>
 					</p>
 				</section>
 				<section data-state="tertiary-slide">
@@ -252,7 +244,7 @@ document.write("&lt;div
 	&lt;/div&gt;");
 					</code></pre>
 					<p class="subtitle bottom-left smallest">
-						<a href="https://randywestergren.com/widespread-xss-vulnerabilities-ad-network-code-affecting-top-tier-publishers-retailers/">randywestergren.com/widespread-xss-vulnerabilities-ad-network-code-affecting-top-tier-publishers-retailers/</a>
+						<a href="https://randywestergren.com/widespread-xss-vulnerabilities-ad-network-code-affecting-top-tier-publishers-retailers/">randywestergren.com/widespread-xss-vulnerabilities/</a>
 					</p>
 				</section>
 				<section data-state="tertiary-slide">
@@ -665,6 +657,10 @@ document.write("&lt;div
 					</p>
 				</section>
 				<section data-state="tertiary-slide">
+					<h3>CSP Strict-Dynamic</h3>
+					<img src="images/strict-dynamic.png" />
+				</section>
+				<section data-state="tertiary-slide">
 					<h3>Content Security Policy 👮‍️</h3>
 					<div class="center-container-1">
 						<div class="center-container-2">
@@ -837,7 +833,7 @@ self.addEventListener('fetch', function(event) {
 				</div>
 			</section>
 		</div>
-		<p class="subtitle top-right">@SimonHearne</p>
+		<p class="subtitle bottom-right">@SimonHearne</p>
 	</div>
 
 	<script src="lib/js/head.min.js"></script>
