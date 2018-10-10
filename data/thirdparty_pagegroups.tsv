@@ -1,0 +1,501 @@
+HOST	PAGEGROUPNAME	FREQ	DURATION	REQUESTSTART
+"network.bazaarvoice.com"	Product Detail Page	20833926	282.070	0.370
+"d3t1dw6evd1rv7.cloudfront.net"	Product Detail Page	17937017	351.487	18.482
+"securepubads.g.doubleclick.net"	Product Detail Page	14691523	275.123	2945.331
+"s.btstatic.com"	Product Detail Page	11413578	55.236	8.697
+"s.btstatic.com"	product matrix	8509768	50.862	11.232
+"s.thebrighttag.com"	Product Detail Page	7858610	175.269	10.031
+"static.curations.bazaarvoice.com"	Product Detail Page	7818394	149.610	1.312
+"securepubads.g.doubleclick.net"	product matrix	6737493	316.869	3418.767
+"s.thebrighttag.com"	product matrix	5762031	167.192	13.354
+"tpc.googlesyndication.com"	Product Detail Page	5303159	158.431	3354.465
+"css"	Product Detail Page	5020936	51.032	604.819
+"s.btstatic.com"	search	5017591	18.073	14.978
+"checkout"	shoppingBag	4851437	374.640	1892.754
+"www.google.com"	Product Detail Page	4792772	316.678	578.622
+"securepubads.g.doubleclick.net"	search	4394245	266.068	2656.872
+"apps.zineone.com"	Product Detail Page	4108505	244.055	7.581
+"s.btstatic.com"	homepage	3903321	173.767	27.812
+"www.googletagservices.com"	Product Detail Page	3383785	225.333	2036.854
+"s.thebrighttag.com"	search	3366463	139.554	15.484
+"securepubads.g.doubleclick.net"	homepage	3357567	343.392	3973.693
+"s.btstatic.com"	shoppingBag	3306052	145.456	10.680
+"s.thebrighttag.com"	homepage	3186579	247.143	20.194
+"www.hlserve.com"	product matrix	3031036	354.720	105.766
+"pagead2.googlesyndication.com"	Product Detail Page	2873623	134.354	2743.715
+"adservice.google.com"	Product Detail Page	2703951	144.876	1662.549
+"b.hlserve.com"	product matrix	2588581	544.675	8.971
+"www.google.com"	product matrix	2512021	323.749	190.083
+"maps.googleapis.com"	product matrix	2440640	349.037	12.579
+"www.hlserve.com"	Product Detail Page	2326683	244.572	523.554
+"apps.zineone.com"	product matrix	2225025	212.451	14.288
+"www.facebook.com"	Product Detail Page	2135231	470.757	2133.067
+"www.google.com"	search	2082588	297.263	422.730
+"tpc.googlesyndication.com"	homepage	2081911	272.489	4574.857
+"d2p4r375zfkzm8.cloudfront.net"	Product Detail Page	2012042	584.209	1.563
+"b.hlserve.com"	search	2011700	551.868	15.958
+"d3t1dw6evd1rv7.cloudfront.net"	Shopping cart	1990970	215.655	26.097
+"tpc.googlesyndication.com"	product matrix	1959247	213.961	9894.884
+"analytics-static.ugc.bazaarvoice.com"	Product Detail Page	1932620	156.841	2.554
+"dpm.demdex.net"	Product Detail Page	1916500	352.705	7.576
+"as-sec.casalemedia.com"	Product Detail Page	1915902	450.370	4.829
+"www.googletagservices.com"	product matrix	1895256	377.233	2228.772
+"www.hlserve.com"	search	1820266	347.582	108.199
+"apps.nexus.bazaarvoice.com"	Product Detail Page	1817319	185.389	2.643
+"apps.zineone.com"	search	1789529	187.245	16.269
+"cdns.brsrvr.com"	Product Detail Page	1743574	271.013	28.494
+"common-rev-dba820b639138b2af1f7.js"	Product Detail Page	1684630	101.979	427.916
+"d2p4r375zfkzm8.cloudfront.net"	product matrix	1643202	576.410	3.981
+"adservice.google.com"	product matrix	1605507	277.929	2096.891
+"fastlane.rubiconproject.com"	Product Detail Page	1566378	604.173	13.780
+"secure.adnxs.com"	Product Detail Page	1565399	648.463	14.539
+"cdns.brsrvr.com"	search	1539212	134.203	21.740
+"maps.googleapis.com"	search	1515348	286.003	26.460
+"s.thebrighttag.com"	shoppingBag	1465349	240.317	9.349
+"js-sec.indexww.com"	Product Detail Page	1448993	190.790	3.255
+"dpm.demdex.net"	product matrix	1446399	365.277	11.792
+"cdns.brsrvr.com"	product matrix	1393355	137.677	2.335
+"apps.zineone.com"	homepage	1355242	328.368	24.127
+"dpm.demdex.net"	homepage	1319798	455.694	60.362
+"adserver-us.adtech.advertising.com"	Product Detail Page	1288942	505.936	14.216
+"staticxx.facebook.com"	Product Detail Page	1284854	380.935	2021.961
+"ing-district.clicktale.net"	shoppingBag	1260265	278.627	0.000
+"triad-d.openx.net"	Product Detail Page	1216739	703.919	56.419
+"www.googletagservices.com"	search	1215994	310.557	1673.256
+"us-u.openx.net"	Product Detail Page	1202474	538.104	3168.405
+"adservice.google.com"	search	1171343	238.777	1718.606
+"tpc.googlesyndication.com"	search	1163795	150.071	26386.488
+"d2p4r375zfkzm8.cloudfront.net"	search	1030401	544.475	14.722
+"d3t1dw6evd1rv7.cloudfront.net"	Checkout	918849	196.173	27.272
+"d2p4r375zfkzm8.cloudfront.net"	homepage	863854	672.704	40.891
+"s.btstatic.com"	dsign-in	856755	70.747	31.030
+"maps.googleapis.com"	NULL	841048	178.260	22.796
+"www.googletagservices.com"	homepage	836765	449.395	8402.636
+"s.btstatic.com"	sale event landing	835714	69.250	13.220
+"www.hlserve.com"	homepage	822360	504.038	48.798
+"www.google.com"	dsign-in	811600	278.459	372.240
+"nova.collect.igodigital.com"	shoppingBag	800507	375.515	0.950
+"pagead2.googlesyndication.com"	product matrix	791956	223.807	5171.263
+"s.btstatic.com"	Shopping cart	771206	31.088	19.109
+"adservice.google.com"	homepage	758218	349.566	3537.508
+"dpm.demdex.net"	search	752081	322.739	34.275
+"static.criteo.net"	homepage	657333	654.399	4707.478
+"maps.googleapis.com"	store locator	628814	185.316	24.646
+"css"	product matrix	621371	217.954	2446.503
+"securepubads.g.doubleclick.net"	shoppingBag	620819	333.841	2676.470
+"www.google-analytics.com"	shoppingBag	619378	171.303	1258.343
+"cdn.truefitcorp.com"	Product Detail Page	608332	315.069	2127.496
+"sb.scorecardresearch.com"	shoppingBag	607238	269.255	9.466
+"pps.zineone.com"	Product Detail Page	606065	301.417	19.778
+"css"	homepage	603065	177.623	1668.489
+"s.btstatic.com"	Checkout	583186	19.647	18.024
+"akam"	Product Detail Page	573999	460.286	4016.281
+"s.thebrighttag.com"	dsign-in	569397	259.990	34.613
+"s.thebrighttag.com"	sale event landing	568919	206.603	13.525
+"www.google-analytics.com"	store locator	568797	246.777	322.910
+"static.criteo.net"	Product Detail Page	562905	767.430	4225.246
+"cdns.brsrvr.com"	homepage	550162	258.020	68.628
+"css"	shoppingBag	539180	91.659	1491.880
+"pagead2.googlesyndication.com"	homepage	538955	342.395	4770.345
+"pagead2.googlesyndication.com"	search	530124	115.131	3601.359
+"securepubads.g.doubleclick.net"	sale event landing	521022	288.992	2845.860
+"d3t1dw6evd1rv7.cloudfront.net"	product matrix	520379	14.357	0.000
+"s.thebrighttag.com"	Shopping cart	512481	139.377	22.943
+"connect.facebook.net"	Product Detail Page	460978	231.657	1038.417
+"apps.zineone.com"	dsign-in	452766	273.199	34.571
+"js-sec.indexww.com"	product matrix	446664	322.674	14.929
+"db2c8u89pdczb.cloudfront.net"	Product Detail Page	446213	223.244	0.000
+"beacon.krxd.net"	Product Detail Page	445219	765.148	2.415
+"www.google.com"	homepage	439981	300.728	81.373
+"s.btstatic.com"	NULL	434415	131.936	7.756
+"d3t1dw6evd1rv7.cloudfront.net"	NULL	426944	62.568	0.023
+"www.facebook.com"	shoppingBag	426391	283.197	18.429
+"akam"	product matrix	415944	402.721	3765.411
+"d2p4r375zfkzm8.cloudfront.net"	sale event landing	402427	364.232	13.653
+"b.hlserve.com"	homepage	402113	775.089	10.658
+"api"	Product Detail Page	390981	622.894	4921.788
+"gum.criteo.com"	shoppingBag	387484	752.868	457.990
+"network.bazaarvoice.com"	read_review	385302	195.237	2.416
+"fastlane.rubiconproject.com"	product matrix	382889	946.997	68.466
+"secure.adnxs.com"	product matrix	382697	1002.563	68.361
+"maps.googleapis.com"	shoppingBag	372509	377.091	49.236
+"s.thebrighttag.com"	Checkout	369737	160.924	21.606
+"dserver-us.adtech.advertising.com"	Product Detail Page	365177	653.143	49.266
+"securepubads.g.doubleclick.net"	dsign-in	355897	323.798	4732.879
+"adserver-us.adtech.advertising.com"	product matrix	312287	792.600	69.339
+"checkout"	directCheckout	311158	421.909	1185.384
+"sp.analytics.yahoo.com"	shoppingBag	308676	359.582	18.219
+"www.googletagservices.com"	shoppingBag	307955	407.338	2288.994
+"6249496.collect.igodigital.com"	shoppingBag	305553	73.669	14.561
+"d.impactradius-event.com"	shoppingBag	305397	172.754	18.504
+"sc-static.net"	shoppingBag	305153	154.013	19.186
+"rp.liadm.com"	shoppingBag	304816	561.192	17.330
+"s.yimg.com"	shoppingBag	304483	113.302	16.396
+"googleads.g.doubleclick.net"	shoppingBag	303763	468.822	83.337
+"js-sec.indexww.com"	search	303210	207.805	13.204
+"s.btstatic.com"	store locator	301991	86.972	11.186
+"common-rev-dba820b639138b2af1f7.js"	homepage	300420	507.546	1832.270
+"ajax.googleapis.com"	store locator	296070	404.421	976.890
+"api"	product matrix	294431	564.268	5017.142
+"www.googletagservices.com"	sale event landing	286611	263.713	1768.948
+"s.thebrighttag.com"	NULL	284948	349.723	8.143
+"googleads.g.doubleclick.net"	Product Detail Page	265029	522.546	7225.141
+"ds-aksb-a.akamaihd.net"	Shopping cart	264439	116.041	1870.480
+"d2p4r375zfkzm8.cloudfront.net"	shoppingBag	263097	536.243	14.897
+"adservice.google.com"	sale event landing	259789	226.086	2274.839
+"www.bkrtx.com"	shoppingBag	254537	130.213	22.184
+"b.hlserve.com"	Product Detail Page	245971	660.247	66.236
+"cdns.brsrvr.com"	Shopping cart	244322	148.752	27.395
+"as-sec.casalemedia.com"	product matrix	241988	853.163	45.419
+"s.btstatic.com"	directCheckout	241684	79.813	6.048
+"fastlane.rubiconproject.com"	search	240834	708.269	78.945
+"secure.adnxs.com"	search	239493	815.021	79.073
+"securepubads.g.doubleclick.net"	NULL	239346	441.737	4880.247
+"cdns.brsrvr.com"	sale event landing	239017	194.191	25.183
+"apps.zineone.com"	shoppingBag	237560	218.177	3.443
+"dpm.demdex.net"	shoppingBag	235740	384.705	26.699
+"dserver-us.adtech.advertising.com"	product matrix	235409	841.184	90.647
+"stags.bluekai.com"	shoppingBag	230561	686.265	3019.009
+"s.btstatic.com"	myaccount	225162	75.936	2.631
+"www.google-analytics.com"	NULL	224766	320.857	892.542
+"www.google.com"	sale event landing	224632	270.860	6805247.017
+"secure.checkout.visa.com"	dsign-in	224232	460.791	145.166
+"www.google-analytics.com"	dsign-in	220465	200.668	2177.724
+"sb.scorecardresearch.com"	dsign-in	220391	212.730	28.038
+"s.btstatic.com"	read_review	219626	7.885	2.263
+"static.criteo.net"	product matrix	216607	471.607	3890.029
+"checkout"	myaccount	215699	341.817	791.086
+"www.hlserve.com"	sale event landing	213704	369.466	65.407
+"connect.facebook.net"	dsign-in	209327	145.088	30.960
+"adserver-us.adtech.advertising.com"	search	208354	625.285	73.662
+"d3t1dw6evd1rv7.cloudfront.net"	kohlsgrw_home	206583	235.897	5.800
+"static.curations.bazaarvoice.com"	read_review	205776	30.366	1.780
+"pps.nexus.bazaarvoice.com"	Product Detail Page	203800	354.071	7.333
+"securepubads.g.doubleclick.net"	store locator	202732	331.976	4623.381
+"maps.gstatic.com"	NULL	201857	151.998	12.659
+"s.thebrighttag.com"	store locator	200067	209.509	10.340
+"ssl.google-analytics.com"	store locator	199659	393.950	600.759
+"aps.googleapis.com"	shoppingBag	199470	328.496	85.854
+"cm.everesttech.net"	homepage	199124	501.519	48.515
+"dpm.demdex.net"	sale event landing	196301	330.423	17.769
+"d.doubleclick.net"	Product Detail Page	196116	637.316	7399.313
+"catalog"	product matrix	190404	1937.234	-120427427.075
+"ds-aksb-a.akamaihd.net"	Product Detail Page	187106	291.220	1895.809
+"recs.richrelevance.com"	product matrix	186068	657.219	58.503
+"sb.scorecardresearch.com"	Product Detail Page	185442	456.962	47.303
+"ds-aksb-a.akamaihd.net"	Checkout	185029	74.552	1602.662
+"device.4seeresults.com"	homepage	184855	883.259	0.000
+"s.btstatic.com"	password reset	184520	157.692	29.904
+"consumer.truefitcorp.com"	Product Detail Page	182873	481.079	6183.501
+"s.btstatic.com"	more like this	178020	7.891	3.258
+"dpm.demdex.net"	Shopping cart	177922	216.946	26.701
+"as-sec.casalemedia.com"	search	177550	668.142	48.613
+"ad.doubleclick.net"	Product Detail Page	174384	647.251	7003.009
+"sb.scorecardresearch.com"	product matrix	173784	371.803	62.712
+"www.google-analytics.com"	product matrix	173177	264.312	2787.865
+"maps.googleapis.com"	Product Detail Page	172657	658.712	0.653
+"googleads.g.doubleclick.net"	product matrix	172308	456.694	4354.912
+"t.co"	shoppingBag	172238	280.049	2.227
+"i.w55c.net"	shoppingBag	171669	728.537	2.004
+"static.ads-twitter.com"	shoppingBag	171402	217.939	3.698
+"nova.collect.igodigital.com"	dsign-in	167982	440.020	29.243
+"cdnjs.cloudflare.com"	store locator	165630	291.885	8.630
+"curations-static.feedmagnet.com"	Product Detail Page	163351	433.312	6.260
+"s.btstatic.com"	search results	162786	32.826	16.232
+"maps.gstatic.com"	product matrix	160835	296.346	21.910
+"match.adsrvr.org"	shoppingBag	160253	559.859	31.205
+"static.criteo.net"	shoppingBag	160056	75.746	1544.419
+"www.google-analytics.com"	Product Detail Page	159877	337.932	2219.854
+"www.facebook.com"	dsign-in	159823	263.624	35.496
+"dnisjsqid2b9p.cloudfront.net"	homepage	159126	384.934	16.380
+"securepubads.g.doubleclick.net"	myaccount	158366	246.113	2786.481
+"sslwidget.criteo.com"	shoppingBag	156542	474.782	5095.187
+"ds-aksb-a.akamaihd.net"	dsign-in	155734	211.080	2312.589
+"secure.adnxs.com"	shoppingBag	155611	806.793	31.683
+"adservice.google.com"	shoppingBag	154769	381.000	3146.703
+"api.bazaarvoice.com"	Product Detail Page	154417	767.740	58.096
+"cdns.brsrvr.com"	dsign-in	154319	235.116	36.820
+"www.gstatic.com"	dsign-in	153181	266.458	44.932
+"d.doubleclick.net"	product matrix	152871	630.448	8628.431
+"d3t1dw6evd1rv7.cloudfront.net"	d-registry	151972	432.352	9.402
+"dpm.demdex.net"	Checkout	151511	246.182	24.518
+"pps.zineone.com"	product matrix	151483	294.799	31.590
+"stats.g.doubleclick.net"	shoppingBag	151056	379.663	3218.035
+"www.facebook.com"	product matrix	148324	379.618	71.603
+"securepubads.g.doubleclick.net"	read_review	148193	184.890	1409.495
+"ad.doubleclick.net"	product matrix	146773	624.540	8529.889
+"s.thebrighttag.com"	read_review	146135	180.377	1.525
+"checkout"	checkout	145712	421.645	2486.677
+"us-u.openx.net"	product matrix	145130	832.639	2813.459
+"checkout"	checkoutshipping	144610	525.609	3276.091
+"maps.googleapis.com"	homepage	142468	740.164	1.653
+"triad-d.openx.net"	product matrix	141867	1019.400	180.473
+"d.tagdelivery.com"	Product Detail Page	141632	708.256	40.347
+"www.googletagservices.com"	NULL	140778	356.813	2087.652
+"secure.checkout.visa.com"	directCheckout	140671	407.313	1015.434
+"tpc.googlesyndication.com"	dsign-in	138282	173.828	5646.666
+"atch.adsrvr.org"	shoppingBag	138179	577.116	35.992
+"dserver-us.adtech.advertising.com"	search	138137	638.030	107.972
+"ds-aksb-a.akamaihd.net"	product matrix	135728	265.762	1714.429
+"dservice.google.com"	Product Detail Page	135363	313.653	4589.177
+"tpc.googlesyndication.com"	sale event landing	132822	320.644	101918.799
+"assets.pinterest.com"	Product Detail Page	132246	406.171	55.217
+"sb.scorecardresearch.com"	search	131715	273.523	49.604
+"googleads.g.doubleclick.net"	homepage	131516	505.845	10033.511
+"www.google-analytics.com"	search	130268	220.096	2186.328
+"googleads.g.doubleclick.net"	search	129379	362.716	2061.161
+"checkout"	ShoppingBag	129201	203.418	792.211
+"connect.facebook.net"	product matrix	127094	252.757	73.289
+"s.thebrighttag.com"	directCheckout	126670	216.032	5.969
+"recs.richrelevance.com"	search	126269	471.878	56.878
+"akam"	homepage	125899	395.712	3513.048
+"apps.zineone.com"	sale event landing	125511	304.860	3.423
+"recs.richrelevance.com"	Product Detail Page	125485	634.801	59.398
+"s.thebrighttag.com"	myaccount	124024	192.833	2.513
+"gpt"	Product Detail Page	123301	242.498	3726.784
+"nova.collect.igodigital.com"	product matrix	122629	684.778	76.385
+"sc-static.net"	dsign-in	122485	133.060	46.630
+"s.thebrighttag.com"	password reset	122369	244.750	28.858
+"media.richrelevance.com"	product matrix	121966	302.970	41.335
+"adservice.google.com"	NULL	120712	270.517	1527.126
+"device.4seeresults.com"	Product Detail Page	120473	1041.833	0.000
+"securepubads.g.doubleclick.net"	more like this	119796	199.128	1414.807
+"ad.tagdelivery.com"	Product Detail Page	119788	733.591	46.653
+"b.hlserve.com"	departments	118290	676.111	15.698
+"s.thebrighttag.com"	more like this	118240	130.668	2.489
+"truefitcorp.com"	Product Detail Page	116322	216.985	4045.752
+"pps.zineone.com"	search	114919	265.454	23.843
+"dpm.demdex.net"	dsign-in	114720	280.889	34.197
+"www.googletagservices.com"	dsign-in	113850	157.256	3164.910
+"d2p4r375zfkzm8.cloudfront.net"	dsign-in	112438	295.504	25.904
+"maps.gstatic.com"	search	111589	204.740	21.586
+"6249496.collect.igodigital.com"	dsign-in	111534	79.984	28.890
+"d.impactradius-event.com"	dsign-in	110888	173.331	30.267
+"s.yimg.com"	dsign-in	110881	100.912	29.152
+"triad-d.openx.net"	search	110648	838.950	165.597
+"rp.liadm.com"	dsign-in	110588	500.399	30.400
+"sp.analytics.yahoo.com"	dsign-in	109728	414.648	28.277
+"ct.pinterest.com"	dsign-in	107304	419.898	33.136
+"adservice.google.com"	dsign-in	105926	441.759	4559.168
+"s.thebrighttag.com"	search results	105825	127.845	19.958
+"d3t1dw6evd1rv7.cloudfront.net"	wishlist	105579	236.844	2.781
+"ad.doubleclick.net"	dsign-in	105178	563.187	6427.435
+"koh-cdns.truefitcorp.com"	Product Detail Page	105074	357.128	276.351
+"www.bkrtx.com"	dsign-in	102418	171.423	25.516
+"js-sec.indexww.com"	dsign-in	102021	131.718	28.301
+"googleads.g.doubleclick.net"	dsign-in	101910	317.087	458.382
+"content"	homepage	101739	740.126	2612.479
+"s.btstatic.com"	purchase-history	101655	21.620	6.913
+"www.facebook.com"	search	101611	298.947	67.676
+"www.googletagservices.com"	store locator	100261	282.144	4924.673
+"s.btstatic.com"	checkoutshipping	99858	381.334	35.988
+"adservice.google.com"	store locator	98994	209.764	4039.879
+"device.4seeresults.com"	product matrix	98890	1003.284	0.000
+"nova.collect.igodigital.com"	search	98170	504.018	57.268
+"6249496.collect.igodigital.com"	product matrix	97218	237.477	51.228
+"iad-usadmm.dotomi.com"	Product Detail Page	97104	492.147	29.647
+"b.hlserve.com"	sale event landing	97103	404.288	38.319
+"s-usweb.dotomi.com"	Product Detail Page	96925	250.743	20.860
+"dservice.google.com"	product matrix	96805	315.375	6776.687
+"ing-district.clicktale.net"	myaccount	96729	266.085	0.000
+"pi.bazaarvoice.com"	Product Detail Page	96540	822.114	71.117
+"s.btstatic.com"	checkout	94593	259.127	0.000
+"us-u.openx.net"	search	94255	698.143	2436.412
+"s.yimg.com"	Product Detail Page	93041	237.347	50.019
+"www.google.com"	shoppingBag	91747	257.873	5886.043
+"tic.curations.bazaarvoice.com"	Product Detail Page	91266	508.307	2.015
+"stags.bluekai.com"	dsign-in	91127	572.544	274.126
+"s.yimg.com"	product matrix	90512	181.469	60.218
+"sc-static.net"	product matrix	89991	283.083	110.649
+"media.richrelevance.com"	Product Detail Page	87092	319.714	41.245
+"cdns.brsrvr.com"	NULL	86553	421.834	14.746
+"sc-static.net"	Product Detail Page	86446	305.131	90.405
+"connect.facebook.net"	search	86163	154.193	55.781
+"nova.collect.igodigital.com"	directCheckout	86048	387.902	2.468
+"api"	homepage	84977	773.271	4890.732
+"cdns.brsrvr.com"	store locator	84793	130.754	18.990
+"d2p4r375zfkzm8.cloudfront.net"	NULL	84790	372.484	16.474
+"dnisjsqid2b9p.cloudfront.net"	sale event landing	84472	231.369	42.182
+"sp.analytics.yahoo.com"	product matrix	84025	551.119	68.930
+"d3t1dw6evd1rv7.cloudfront.net"	wedding-registry	83784	306.613	24.968
+"rp.liadm.com"	product matrix	83746	680.503	66.338
+"6249496.collect.igodigital.com"	Product Detail Page	83679	224.772	50.223
+"d3t1dw6evd1rv7.cloudfront.net"	homepage	82567	292.021	5.701
+"ing-district.clicktale.net"	directCheckout	81395	304.417	0.000
+"stags.bluekai.com"	Product Detail Page	79218	894.092	1630.202
+"www.bkrtx.com"	Product Detail Page	78868	448.989	49.831
+"s0.2mdn.net"	Product Detail Page	78347	402.244	3295.927
+"stags.bluekai.com"	product matrix	78157	743.270	615.240
+"www.bkrtx.com"	product matrix	78007	416.138	52.588
+"ds-aksb-a.akamaihd.net"	search	77763	234.887	1450.305
+"servedby.flashtalking.com"	Product Detail Page	77389	577.790	25.031
+"social.skavaone.com"	Product Detail Page	76952	3.132	0.000
+"sp.analytics.yahoo.com"	Product Detail Page	76119	681.580	58.067
+"nym1-ib.adnxs.com"	Product Detail Page	75272	594.607	710.499
+"cm.everesttech.net"	Product Detail Page	74731	453.285	27.628
+"ds-aksb-a.akamaihd.net"	homepage	74716	375.189	2729.288
+"norelco-o-20180531-LG-promo"	Product Detail Page	74569	306.277	5.124
+"s.btstatic.com"	myaccount_orderDetail	74434	18.626	5.798
+"nav-overlay-gift-test-large-1"	Product Detail Page	74403	404.407	5.578
+"nike-20180606"	Product Detail Page	74391	370.157	5.387
+"analytics-static.ugc.bazaarvoice.com"	read_review	73982	39.102	3.822
+"www.google-analytics.com"	homepage	73413	434.800	1518.572
+"apps.nexus.bazaarvoice.com"	read_review	72985	57.181	2.897
+"www.googletagservices.com"	read_review	72945	185.812	1398.708
+"adservice.google.com"	read_review	72782	134.041	1171.937
+"pippio.com"	shoppingBag	71681	332.062	5058.177
+"cdns.brsrvr.com"	read_review	71438	60.427	2.259
+"rp.liadm.com"	Product Detail Page	71172	823.534	59.937
+"media.richrelevance.com"	search	71033	198.384	38.348
+"securepubads.g.doubleclick.net"	password reset	70917	453.461	4186.570
+"dservice.google.com"	search	70844	270.639	5340.421
+"log.pinterest.com"	Product Detail Page	70780	698.417	55.086
+"d.doubleclick.net"	search	70024	611.136	68083.365
+"res.tdxio.com"	Product Detail Page	69755	307.638	59.347
+"cdn.tagdelivery.com"	product matrix	68630	292.644	64.048
+"ct.pinterest.com"	product matrix	68448	607.411	71.530
+"cdn.rlcdn.com"	product matrix	68007	504.712	70.764
+"www.hlserve.com"	departments	67822	532.353	19.017
+"s.yimg.com"	search	67577	136.047	47.782
+"s.btstatic.com"	departments	67517	13.630	8.333
+"6249496.collect.igodigital.com"	search	67423	106.003	45.516
+"s.thebrighttag.com"	purchase-history	67243	142.161	7.994
+"css"	search	67023	56.199	543.927
+"sc-static.net"	search	66884	179.753	90.999
+"cm.everesttech.net"	product matrix	66319	420.722	47.955
+"ad.doubleclick.net"	search	64972	620.002	72711.412
+"static.masterpass.com"	dsign-in	64654	595.061	14.468
+"sp.analytics.yahoo.com"	search	64453	441.587	53.017
+"www.hlserve.com"	search results	63681	197.795	45.365
+"rp.liadm.com"	search	63672	538.432	53.383
+"media.richrelevance.com"	homepage	63629	587.874	3.680
+"eus.rubiconproject.com"	Product Detail Page	61511	423.667	229.392
+"b.hlserve.com"	NULL	61090	1099.895	13.481
+"s.btstatic.com"	ShoppingBag	60749	51.108	0.000
+"www.hlserve.com"	NULL	60230	915.906	18.017
+"www.google.com"	NULL	59701	578.451	182.647
+"checkout"	discounts	59567	528.812	2304.146
+"pagead2.googlesyndication.com"	dsign-in	59282	206.598	7136.431
+"servedby.flashtalking.com"	product matrix	59231	573.657	41.934
+"z.moatads.com"	Product Detail Page	59053	393.386	9.506
+"sb.scorecardresearch.com"	myaccount	58880	224.488	2.665
+"www.googletagservices.com"	more like this	58863	215.593	1297.853
+"adservice.google.com"	more like this	58796	152.720	1173.128
+"www.google-analytics.com"	myaccount	58631	133.904	966.563
+"apps.zineone.com"	NULL	58413	904.685	10.556
+"cdn.rlcdn.com"	Product Detail Page	57839	622.210	77.537
+"cdn.tagdelivery.com"	Product Detail Page	57705	269.365	72.332
+"securepubads.g.doubleclick.net"	directCheckout	57639	259.520	2075.671
+"gampad"	Product Detail Page	57583	701.270	6766.049
+"ct.pinterest.com"	Product Detail Page	57225	865.746	81.130
+"cdns.brsrvr.com"	more like this	57039	102.693	4.188
+"s.btstatic.com"	kohlsgrw_home	56827	27.386	5.007
+"stats.g.doubleclick.net"	dsign-in	56706	364.218	6508.262
+"adnxs.com"	Product Detail Page	56608	684.885	15.328
+"www.google-analytics.com"	directCheckout	56579	157.009	948.607
+"www.googletagservices.com"	myaccount	56557	281.011	2634.651
+"sb.scorecardresearch.com"	directCheckout	56519	281.301	5.490
+"www.bkrtx.com"	search	56254	266.129	58.527
+"cdns.brsrvr.com"	Checkout	55844	103.367	21.714
+"secure.ace.advertising.com"	Product Detail Page	55240	558.829	10.032
+"css"	myaccount	54613	86.974	417.327
+"gpt"	product matrix	54409	274.190	6891.547
+"social.skavaone.com"	product matrix	54196	3.754	0.000
+"pagead2.googlesyndication.com"	sale event landing	53283	340.029	6066.772
+"s.btstatic.com"	kohlscharge	52407	13.519	0.694
+"stags.bluekai.com"	search	52372	658.474	389.713
+"cdns.brsrvr.com"	password reset	52193	294.705	23.216
+"chart.googleapis.com"	NULL	52153	185.813	12.650
+"s.btstatic.com"	MyWallet	51807	17.148	11.915
+"masterpass.com"	directCheckout	51055	419.580	1041.693
+"asterpass.com"	directCheckout	51033	419.574	1040.014
+"gpt"	myaccount	50080	138.325	1327.762
+"dpm.demdex.net"	NULL	49925	443.254	13.507
+"s.thebrighttag.com"	myaccount_orderDetail	49377	126.948	6.707
+"curations.bazaarvoice.com"	Product Detail Page	49198	456.011	0.065
+"maps.googleapis.com"	checkoutshipping	49073	524.829	59.962
+"tpc.googlesyndication.com"	NULL	48846	385.922	5506.354
+"static.criteo.net"	search	48623	441.721	3784.762
+"maps.googleapis.com"	directCheckout	48484	327.900	22.372
+"maps.gstatic.com"	store locator	47951	346.260	42.568
+"cdns.brsrvr.com"	search results	47484	165.044	18.239
+"aps.googleapis.com"	directCheckout	47039	326.899	21.208
+"s.btstatic.com"	orderHistory	46720	101.621	0.633
+"cdn.ampproject.org"	homepage	46675	271.277	3418.325
+"maps.googleapis.com"	myaccount	46519	334.017	7.469
+"cdn.tagdelivery.com"	search	46042	135.249	50.122
+"static.criteo.net"	sale event landing	45998	820.886	4748.461
+"cdn.rlcdn.com"	search	45921	368.127	54.773
+"analytics.twitter.com"	shoppingBag	45774	286.274	0.848
+"securepubads.g.doubleclick.net"	departments	45604	297.180	1567.355
+"s.thebrighttag.com"	checkoutshipping	45398	430.829	31.779
+"sb.scorecardresearch.com"	NULL	45345	561.547	10.164
+"res.tdxio.com"	product matrix	45105	349.877	53.361
+"dpm.demdex.net"	password reset	45067	446.903	26.205
+"s.thebrighttag.com"	departments	44919	236.487	5.864
+"ct.pinterest.com"	search	44827	436.676	59.094
+"cdn.doubleverify.com"	Product Detail Page	44771	333.387	9.288
+"dpm.demdex.net"	myaccount	44439	340.463	3.773
+"dnisjsqid2b9p.cloudfront.net"	departments	44388	416.995	31.948
+"ace.advertising.com"	Product Detail Page	44349	560.758	12.039
+"beacon-us-iad2.rubiconproject.com"	Product Detail Page	43898	635.326	3.738
+"s.btstatic.com"	discounts	43602	218.645	0.914
+"s.btstatic.com"	MyInfo	43473	28.368	15.586
+"fw.adsafeprotected.com"	Product Detail Page	43356	489.912	333.245
+"ing-district.clicktale.net"	checkoutshipping	43190	399.210	0.000
+"css"	sale event landing	43088	254.702	1659.329
+"content"	sale event landing	42999	782.649	1979.430
+"connect.facebook.net"	NULL	42932	456.047	131.123
+"rtb0.doubleverify.com"	Product Detail Page	42790	558.004	4.167
+"www.facebook.com"	directCheckout	42201	284.565	13.690
+"secure-ds.serving-sys.com"	Product Detail Page	42039	247.526	94.652
+"www.facebook.com"	myaccount	41997	235.176	4.216
+"secure.adnxs.com"	sale event landing	41950	579.779	22.310
+"stats.g.doubleclick.net"	product matrix	41930	560.091	8670.004
+"apps.zineone.com"	departments	41554	214.190	16.924
+"sjc-usadmm.dotomi.com"	Product Detail Page	41379	611.626	0.000
+"dpm.demdex.net"	purchase-history	41319	182.675	9.468
+"tic.criteo.net"	product matrix	41175	485.799	5255.052
+"s.thebrighttag.com"	checkout	40800	386.326	0.000
+"css"	directCheckout	40663	84.237	990.848
+"secure.adnxs.com"	NULL	40632	2544.341	0.133
+"s.btstatic.com"	Yes2You	40308	28.043	20.492
+"s.acexedge.com"	Product Detail Page	40279	683.456	3058.710
+"nova.collect.igodigital.com"	myaccount	39982	426.310	1.817
+"stats.g.doubleclick.net"	Product Detail Page	39972	636.773	7625.068
+"atpixelus.alephd.com"	Product Detail Page	39391	663.389	8.346
+"fastlane.rubiconproject.com"	sale event landing	39299	548.006	23.930
+"tpc.googlesyndication.com"	myaccount	39246	98.195	3194.372
+"www.facebook.com"	NULL	38946	661.951	11.187
+"d.tagdelivery.com"	sale event landing	38826	351.754	14.933
+"secure.checkout.visa.com"	Product Detail Page	38346	319.428	0.186
+"googleads4.g.doubleclick.net"	Product Detail Page	37898	404.997	7931.085
+"ing-district.clicktale.net"	checkout	37783	319.633	0.000
+"s.thebrighttag.com"	kohlsgrw_home	37740	174.481	5.110
+"pmp_m_ratings.png"	Product Detail Page	37690	145.112	2537.304
+"fastlane.rubiconproject.com"	NULL	37456	3105.415	0.000
+"c.evidon.com"	Product Detail Page	37419	229.430	10.692
+"servedby.flashtalking.com"	search	37118	480.469	39.338
+"api.bazaarvoice.com"	sale event landing	36396	582.427	25.112
+"social.skavaone.com"	NULL	35828	26.374	0.000
+"lax1-ib.adnxs.com"	Product Detail Page	35723	638.619	946.083
+"ad.tagdelivery.com"	sale event landing	35355	351.281	15.889
+"analytics.twitter.com"	product matrix	35310	476.937	28.570
+"s.btstatic.com"	d-registry	35096	41.783	9.508
+"securepubads.g.doubleclick.net"	kohlscharge	35082	223.453	1481.441
+"s.thebrighttag.com"	ShoppingBag	35078	145.893	0.000
+"googleapis.com"	NULL	35017	179.230	0.000
+"ds-aksb-a.akamaihd.net"	purchase-history	34747	50.075	1208.452
+"s.thebrighttag.com"	kohlscharge	34736	153.375	0.412
+"tagdelivery.com"	Product Detail Page	34571	235.739	94.414
+"dpm.demdex.net"	store locator	34376	568.776	63.243
+"s.thebrighttag.com"	MyWallet	34279	143.748	12.581
+"s.btstatic.com"	wishlist	34252	25.245	1.172
+"api"	shoppingBag	34058	635.222	4095.320
+"www.masterpass.com"	dsign-in	33877	504.683	36.406
+"static.cmptch.com"	Product Detail Page	33661	103.346	5.161
+"www.googletagservices.com"	password reset	33562	451.826	3801.230
+"pagead2.googlesyndication.com"	myaccount	33009	134.103	3286.270
+"masterpass.com"	dsign-in	33006	474.191	427.421
+"secure.uac.advertising.com"	Product Detail Page	32998	320.329	13.749
+"quantcast584928381.s.moatpixel.com"	Product Detail Page	32909	411.200	5.438
