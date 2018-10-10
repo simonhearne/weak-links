@@ -4,16 +4,16 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-
+	
 	<title>Weak Links | Simon Hearne</title>
-
+	
 	<link rel="stylesheet" href="css/reveal.css">
 	<link rel="stylesheet" href="css/theme/awesome.css">
 	<link rel="stylesheet" href="css/custom.css">
-
+	
 	<!-- Theme used for syntax highlighting of code -->
 	<link rel="stylesheet" href="lib/css/zenburn.css">
-
+	
 	<!-- Printing and PDF exports -->
 	<script>
 		var link = document.createElement('link');
@@ -26,7 +26,7 @@
 	<script src="lib/js/vega@3.2.1"></script>
 	<script src="lib/js/vega-lite@2.3.1"></script>
 	<script src="lib/js/vega-embed@3.2.0"></script>
-
+	
 </head>
 
 <body>
@@ -36,11 +36,6 @@
 				<h1>Third-Party Content</h1>
 				<h2>The weak link in your chain?</h2>
 				<p class="smaller" style="text-align: center;">Simon Hearne - Principle Engineer @ Akamai</p>
-				<p class="subtitle bottom-left">#perfmatters conf 2018</p>
-			</section>
-			<section data-state="main-slide">
-				<h4>AKA</h4>
-				<h2>Bad people<br>doing horrible things<br>to good sites</h2>
 			</section>
 			<section data-state="main-slide">
 				<!-- TODO: the chain? write code, test, deploy to staging, deploy to live, third-parties...-->
@@ -57,22 +52,30 @@
 					</div>
 				</div>
 			</section>
-			<section data-state="main-slide" data-background-image="images/waterfall-canonical-vs-amp.png" data-background-size="contain">
-				<h2>AMP got something right 🙄</h2>
-				<p class="subtitle bottom-left smaller text-shadow">
-					<a href="https://timkadlec.com/remembers/2018-03-19-how-fast-is-amp-really/">timkadlec.com/remembers/2018-03-19-how-fast-is-amp-really/</a>
-				</p>
+			<!--
+				<section data-state="main-slide" data-background-image="images/waterfall-canonical-vs-amp.png" data-background-size="contain">
+					<h2>AMP got something right 🙄</h2>
+					<p class="subtitle bottom-left smaller text-shadow">
+						<a href="https://timkadlec.com/remembers/2018-03-19-how-fast-is-amp-really/">timkadlec.com/remembers/2018-03-19-how-fast-is-amp-really/</a>
+					</p>
+				</section>
+			-->
+			<section data-state="main-slide">
+				<h2>What I've learned in 5 years</h2>
+				<p>we <em>seem</em> to have less control than ever</p>
+				<p class="fragment">&amp; there are <em>increasingly</em> more third-party providers</p>
 			</section>
 			<section data-state="main-slide">
-				<h2>What i've learned in 5 years</h2>
-				<p class="fragment">we
-					<em>seem</em> to have less control than ever</p>
+				<h2>How I think I can help you</h2>
+				<ol class="centered align-left">
+					<li class="fragment">Understand the risk they pose</li>
+					<li class="fragment">Discover &amp; identify third-party tags</li>
+					<li class="fragment">How to monitor &amp; and measure tags</li>
+					<li class="fragment">Building a business case for tags</li>
+				</ol>
 			</section>
 			<section>
 				<section data-state="secondary-slide">
-					<h2>The "business" 👩‍✈️</h2>
-				</section>
-				<section data-state="tertiary-slide">
 					<h3>Tags serve business goals</h3>
 					<ul>
 						<li class="fragment">Measurement &amp; Analytics</li>
@@ -82,28 +85,6 @@
 						<li class="fragment">Tag Management</li>
 					</ul>
 				</section>
-				<section data-state="tertiary-slide">
-					<h3>The
-						<em>money</em> &nbsp;💵
-					</h3>
-					<blockquote>“We know that Optimizely slows down the site, but it will get us $750k increased revenue this year”</blockquote>
-					<p class="subtitle bottom-left smallest">Holiday website, UK</p>
-				</section>
-				<section data-state="tertiary-slide">
-					<h3>The
-						<em>it's not my job</em> &nbsp;🤷‍
-					</h3>
-					<blockquote>“We suspect it slows the site down, we haven’t tested it. Marketing says it’s critical to their latest TV campaign so
-						there’s no point arguing”</blockquote>
-					<p class="subtitle bottom-left smallest">Budget airline, UK</p>
-				</section>
-				<section data-state="tertiary-slide">
-					<h3>The
-						<em>tag manager</em> &nbsp;🕴
-					</h3>
-					<blockquote>“All the tags go through the tag manager, so they should be fine.”</blockquote>
-					<p class="subtitle bottom-left smallest">Clicks-and-mortar store, UK</p>
-				</section>
 			</section>
 			<section>
 				<section data-state="main-slide">
@@ -111,29 +92,21 @@
 					<h1>Risk?</h1>
 					<h2>🎲</h2>
 				</section>
+			</section>
+			<!--
 				<section data-state="tertiary-slide">
 					<h3>PS: Availability Heuristic 101 🤔</h3>
 					<img src="images/availability-bias.jpg"></img>
 				</section>
-				<section data-state="tertiary-slide">
-					<h3>PS: Availability Heuristic 101 🤔</h3>
-					<ul class="no-bullets">
-						<li>Remember when Facebook went down?</li>
-						<li class="fragment">Remember when Disqus went down?</li>
-						<li class="fragment">Remember when Maxymiser went down?</li>
-						<li class="fragment">Remember when
-							<b>Dyn</b> went down?</li>
-						<li class="fragment">left-pad 😞</li>
-				</section>
-			</section>
+			-->
 			<section>
 				<section data-state="secondary-slide">
 					<h4>Risk 1:</h4>
-					<h2>Malicious code injection 👹</h2>
+					<h2>Code Quality 👹</h2>
 				</section>
 				<section data-state="tertiary-slide">
-					<h3>How much of your code has vulnerabilities?</h3>
-					<img src="images/vulnerable.png" />
+					<p class="massive">78.7%</p>
+					<p class="big">of top 500k sites include JS<br>with known vulnerabilities</p>
 					<p class="subtitle bottom-left smallest">
 						<a href="https://beta.httparchive.org/reports/state-of-the-web#pctVuln">beta.httparchive.org/reports/state-of-the-web#pctVuln</a>
 					</p>
@@ -152,81 +125,13 @@
 						<a href="https://twitter.com/nytimes/status/3958547840">twitter.com/nytimes/status/3958547840</a>
 					</p>
 				</section>
-				<!--
-				<section data-state="tertiary-slide">
-					<h3>P*ssed employees 💩</h3>
-				</section>
-				<section data-state="tertiary-slide">
-					</h3>l33t h4x0r5 👩‍💻</h3>
-				</section>
-			-->
-				<section data-state="tertiary-slide">
-					<h3>Internet 'Service' Providers </h3>
-					<img src="images/comcast.png" />
-					<p class="subtitle bottom-left smallest">
-						<a href="https://blog.ryankearney.com/2013/01/comcast-caught-intercepting-and-altering-your-web-traffic/">blog.ryankearney.com/2013/01/comcast-caught-intercepting-and-altering-your-web-traffic/</a>
-					</p>
-				</section>
-				<section data-state="tertiary-slide">
-					<h3>Content Delivery Networks</h3>
-					<img src="images/amp_cdn.png" />
-					<p class="subtitle bottom-left smallest">
-						<a href="https://github.com/ampproject/amphtml/issues/2380">github.com/ampproject/amphtml/issues/2380</a>
-					</p>
-				</section>
-				<section data-state="tertiary-slide">
-					<h3>Content Delivery Networks</h3>
-					<img width="40%" src="images/amp.png" />
-				</section>
 				<section data-state="tertiary-slide">
 					<h3>Unintentional data collection</h3>
-					<blockquote>website tracking is a "security disaster waiting to happen"</blockquote>
-					<iframe width="560" height="315" data-src="https://www.youtube.com/embed/GJWzNm_dTwc?rel=0&amp;controls=0&amp;showinfo=0&amp;autoplay=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+					<blockquote class="smaller">website tracking is a "security disaster waiting to happen"</blockquote>
+					<img src="images/mixpanel.jpg">
 					<p class="subtitle bottom-left smallest">
-							<a href="https://freedom-to-tinker.com/2018/02/26/no-boundaries-for-credentials-password-leaks-to-mixpanel-and-session-replay-companies/">freedom-to-tinker.com/2018/02/26/no-boundaries-for-credentials-password-leaks-to-mixpanel-and-session-replay-companies/</a>
-						</p>
-				</section>
-			</section>
-			<section>
-				<section data-state="secondary-slide">
-					<h4>Risk 2:</h4>
-					<h2>Availability 📉</h2>
-				</section>
-				<section data-state="tertiary-slide">
-					<h3>Do they fail gracefully?</h3>
-					<video controls="no" autoplay="true" loop="true" name="Trumpy Tweety" src="videos/trump_tweet.mov"></video>
-					<p>👍</p>
-				</section>
-				<section data-state="tertiary-slide">
-					<h3>Do they fail gracefully?</h3>
-					<video src="videos/spof.mp4" autoplay="false" controls="true"></video>
-					<p>👎</p>
-				</section>
-				<section data-state="tertiary-slide">
-					<h3>Are they using a CDN?</h3>
-					<h4>(&amp; is it as good as yours?)</h4>
-					<img src="images/optimix.png"/>
-				</section>
-				<section data-state="tertiary-slide">
-					<h3>What is their SLA for availability?</h3>
-					<h4>(&amp; is it as good as yours?)</h4>
-					<img width="50%" src="images/sla.png"/>
-					<p class="subtitle bottom-left smaller"><a href="https://help.optimizely.com/Account_Settings/Optimizely_support_plans">help.optimizely.com/Account_Settings/Optimizely_support_plans</a></p>
-				</section>
-				<section data-state="tertiary-slide">
-					<h3>Availability to the user</h3>
-					<ul>
-						<li class="fragment">Government / geo blocking</li>
-						<li class="fragment">Ad blocking</li>
-						<li class="fragment">Tracker blocking</li>
-						<li class="fragment">Random crap</li>
-					</ul>
-				</section>
-			</section>
-			<section>
-				<section data-state="secondary-slide">
-					<h4>Risk 3:</h4>
-					<h2>Code Quality 🔎</h2>
+						<a href="https://freedom-to-tinker.com/2018/02/26/no-boundaries-for-credentials-password-leaks-to-mixpanel-and-session-replay-companies/">freedom-to-tinker.com/2018/02/26/no-boundaries-for-credentials-password-leaks-to-mixpanel-and-session-replay-companies/</a>
+					</p>
 				</section>
 				<section data-state="tertiary-slide">
 					<h3>XSS Vulnerabilites</h3>
@@ -236,36 +141,15 @@
 					</p>
 				</section>
 				<section data-state="tertiary-slide">
-					<h3>XSS Vulnerabilites</h3>
-					<pre><code class="hljs" style="font-size:80%;">
-document.write("&lt;div
-	class='vdb_player vdb_565ec775e4b092ebc9685ce853180f5de4b066208a63279a'
-	vdb_params='m.pub_id=606413&m.url=http://nypost.com/#1' - alert(1) - '-alert(1)-'&gt;
-	&lt;/div&gt;");
-					</code></pre>
-					<p class="subtitle bottom-left smallest">
-						<a href="https://randywestergren.com/widespread-xss-vulnerabilities-ad-network-code-affecting-top-tier-publishers-retailers/">randywestergren.com/widespread-xss-vulnerabilities/</a>
-					</p>
-				</section>
-				<section data-state="tertiary-slide">
 					<h3>Different release schedules</h3>
 					<pre><code class="hlhtml">
 &lt;script src="//s7.addthis.com/addthis_widget.js" async&gt;&lt;/script&gt;
 					</code></pre>
-					<!--<img style="filter:invert(1);" width="100px" class="naked" src="images/curved-arrow.svg"/>-->
-					<h5>How do you know when it changes?</h5>
+					<p class="smaller">How do you know when it changes?</p>
 					<p class="subtitle bottom-left smallest">
 						<a href="https://www.addthis.com">www.addthis.com</a>
 					</p>
 				</section>
-				<!--
-				<section data-state="tertiary-slide">
-					<p>Polluting the global scope</p>
-				</section>
-				<section data-state="tertiary-slide">
-					<p>Clearing the console log</p>
-				</section>
-			-->
 				<section data-state="tertiary-slide">
 					<h3>Just plain thoughtless</h3>
 					<img src="images/newrelic.png" />
@@ -273,23 +157,70 @@ document.write("&lt;div
 						<a href="https://discuss.newrelic.com/t/do-not-clear-the-resource-timing-buffer/54771">discuss.newrelic.com/t/do-not-clear-the-resource-timing-buffer/</a>
 					</p>
 				</section>
+				<section data-state="secondary-slide">
+					<h2>Code Quality 🔎</h2>
+					<ul>
+						<li>How do they protect themselves?</li>
+						<li>How do they protect your customers?</li>
+					</ul>
+				</section>
 			</section>
 			<section>
 				<section data-state="secondary-slide">
-					<h4>Risk 4:</h4>
+					<h4>Risk 2:</h4>
+					<h2>Availability 📉</h2>
+				</section>
+				<section data-state="tertiary-slide">
+					<h3>Availability = User Availability</h3>
+					<ul>
+						<li class="fragment">Government / ISP interference</li>
+						<li class="fragment">Content blocking (~10% of users*)</li>
+						<li class="fragment">Random issues (1% of JS fails to load*)</li>
+					</ul>
+					<p class="subtitle bottom-left smallest"><a href="https://www.slideshare.net/ianfeather/frontend-resilience"> * www.slideshare.net/ianfeather/frontend-resilience</a></p>
+				</section>
+				<section data-state="tertiary-slide">
+					<h3>Do they fail gracefully?</h3>
+					<video muted autoplay controls="no" loop="true" name="Trumpy Tweety" src="videos/trump_tweet.mov"></video>
+					<p>👍</p>
+				</section>
+				<section data-state="tertiary-slide">
+					<h3>Do they fail gracefully?</h3>
+					<video autoplay muted loop controls="no" src="videos/postcode1.mov">
+					</video>
+				</section>
+				<section data-state="tertiary-slide">
+					<h3>Do they fail gracefully?</h3>
+					<video muted autoplay controls="no" loop src="videos/postcode2.mov"></video>
+					<p class="fragment">👎</p>
+				</section>
+				<section data-state="tertiary-slide">
+					<h3>Are they using a CDN?</h3>
+					<h4>(&amp; is it as good as yours?)</h4>
+					<img src="images/optimix.png"/>
+				</section>
+				<section data-state="tertiary-slide">
+					<h3>What is their SLA for availability?</h3>
+					<h4>(&amp; is it as good as yours?)</h4>
+					<img width="70%" src="images/sla.png"/>
+					<p class="subtitle bottom-left smallest"><a href="https://help.optimizely.com/Account_Settings/Optimizely_support_plans">Optimizely support plans</a></p>
+				</section>
+				<section data-state="secondary-slide">
+					<h2>Availability 📉</h2>
+					<ul>
+						<li>What happens when they fail?</li>
+						<li>How often could they fail?</li>
+					</ul>
+				</section>
+			</section>
+			<section>
+				<section data-state="secondary-slide">
+					<h4>Risk 3:</h4>
 					<h2>Performance 🚀</h2>
 				</section>
 				<section data-state="tertiary-slide">
 					<h3>Self-policing isn't good enough</h3>
-					<blockquote>
-						... the X Web Reference Snippet was available ... and the download time over
-						<b>HTTP</b> did not exceed
-						<b>500 ms</b>.
-					</blockquote>
-					<blockquote class="fragment">
-						Snippet is sampled every minute from a variety of
-						<b>U.S.</b> locations.
-					</blockquote>
+					<img width="60%" src="images/optimizely_sla.png">
 					<p class="subtitle bottom-left smallest">status.optimizely.com</p>
 				</section>
 				<section data-state="tertiary-slide">
@@ -297,70 +228,24 @@ document.write("&lt;div
 					<img width="60%" src="images/ab_tools.png"/>
 					<p class="subtitle bottom-left smallest"><a href="https://orangevalley.nl/en/blog/9-ab-testing-tools-compared-on-site-speed-impact/">orangevalley.nl/en/blog/9-ab-testing-tools-compared-on-site-speed-impact/</a></p>
 				</section>
+				<!--
 				<section data-state="tertiary-slide">
-					<h3>The web is variable</h3>
-					<div style="width:900px;height:400px;" id="svg-container-1"></div>
-					<p class="subtitle bottom-left smaller">Top 250 resources from HTTP Archive</p>
-					<script type="text/javascript">
-						var yourVlSpec = {
-						  "$schema": "https://vega.github.io/schema/vega-lite/v2.0.json",
-						  "description": "A simple bar chart with embedded data.",
-						  "data": {
-							"url": "data/httparchive-resource-variability.json",
-							"format": {
-								"type": "json"
-							}
-						  },
-						  "mark": "point",
-							"encoding": {
-								"x": {
-									"field": "freq",
-									"type": "quantitative"
-								},
-								"y": {
-									"field": "p95",
-									"type": "quantitative",
-									"axis": {
-										"title": "95th Percentile Load Duration"
-									}
-								},
-								"size": {
-									"field": "freq",
-									"type": "quantitative"
-								},
-
-							}
-						};
-						var opts = {
-							"actions": false,
-							"width": 600,
-							"height": 400,
-							"config": {
-								"autosize": "pad",
-								"padding": 5,
-								"background": "white"
-							}
-						};
-						vegaEmbed("#svg-container-1", yourVlSpec, opts);
-					  </script>
-				</section>
-				<section data-state="tertiary-slide">
-					<h3>The web is variable</h3>
+					<h3>Third-parties are variable</h3>
 					<div style="width:900px;height:400px;" id="svg-container-2"></div>
 					<script type="text/javascript">
 						var yourVlSpec = {
-						  "$schema": "https://vega.github.io/schema/vega-lite/v2.0.json",
-						  "description": "A simple bar chart with embedded data.",
-						  "data": {
-							"url": "data/rum-resource-variability.json",
-							"format": {
-								"type": "json"
-							}
-						  },
-						  "mark": "point",
+							"$schema": "https://vega.github.io/schema/vega-lite/v2.0.json",
+							"description": "A simple bar chart with embedded data.",
+							"data": {
+								"url": "data/rum-resource-variability.json",
+								"format": {
+									"type": "json"
+								}
+							},
+							"mark": "point",
 							"encoding": {
 								"x": {
-									"field": "FREQ",
+									"field": "freq",
 									"type": "quantitative"
 								},
 								"y": {
@@ -371,29 +256,32 @@ document.write("&lt;div
 									}
 								},
 								"size": {
-									"field": "FREQ",
+									"field": "freq",
 									"type": "quantitative"
 								},
-
+								
 							}
 						};
 						var opts = {
 							"actions": false,
 							"width": 600,
 							"height": 400,
+							"renderer": "svg",
 							"config": {
-								"autosize": "pad",
+								"autosize": "fit",
 								"padding": 5,
 								"background": "white"
 							}
 						};
 						vegaEmbed("#svg-container-2", yourVlSpec, opts);
-					  </script>
+					</script>
 					<p class="subtitle bottom-left smaller">Top 250 resources from Akamai mPulse</p>
 				</section>
+			-->				
 				<section data-state="tertiary-slide">
 					<h3>Resource Timing is the hero we need</h3>
 					<img src="images/resource-timing-overview-1.png">
+					<h5>&nbsp;</h5>
 					<p class="subtitle bottom-left smaller">https://www.w3.org/TR/resource-timing-1/</p>
 				</section>
 				<section data-state="tertiary-slide">
@@ -402,200 +290,286 @@ document.write("&lt;div
 					<h5>not without Timing-Allow-Origin 🙈</h5>
 					<p class="subtitle bottom-left smaller"><a href="https://nicj.net/resourcetiming-visibility-third-party-scripts-ads-and-page-weight/">nicj.net/resourcetiming-visibility-third-party-scripts-ads-and-page-weight/</a></p>
 				</section>
-				<section data-state="tertiary-slide">
-					<h3>Resource Timing won't save us</h3>
-					<div class="center-container-1">
-						<div class="center-container-2">
-							<div class="centered align-left">
-								<p class="fragment">🙈 no redirect information</p>
-								<p class="fragment">🙈 limited data on
-									<b>72%</b> of third-party content</p>
-								<p class="fragment">🙈 only the first 150 requests *</p>
-								<p class="fragment">🙈 no data on old iDevices</p>
-								<p class="fragment">🙈 no data for cross-origin iframes</p>
-							</div>
-						</div>
-					</div>
-					<p class="subtitle bottom-left smaller">
-						<a href="https://developer.akamai.com/blog/2017/07/26/measuring-performance-third-party-contributors/">developer.akamai.com/blog/2017/07/26/measuring-performance-third-party-contributors/</a>
-						<br>* limit can be increased per pageview
-					</p>
-				</section>
-			</section>
-			<section>
-				<section data-state="secondary-slide">
-					<h4>Risk 4:</h4>
-					<h2>Performance 🚀</h2>
-					<h3>(for real this time)</h3>
-				</section>
-				<section data-state="tertiary-slide">
-					<h3>CPU is our biggest bottleneck ⏳</h3>
-					<img src="images/cpu-mobile.png"/>
-				</section>
-				<section data-state="tertiary-slide"n>
-					<h3>Who's policing the third-parties?</h3>
-					<img src="images/cpu-abuser.png"/>
-					<p class="subtitle bottom-left smaller"><a href="https://github.com/jpvincent/3rd-party-cpu-abuser">github.com/jpvincent/3rd-party-cpu-abuser</a></p>
-				</section>
-				<section data-state="tertiary-slide">
-					<h3>Variable CPU time</h3>
-					<h4>on synthetic agents!</h4>
-					<img src="images/third-party-cpu-httparchive.jpg" />
-					<p class="subtitle bottom-left smaller"><a href="https://twitter.com/AndyDavies/status/973895262388224000">twitter.com/AndyDavies/status/973895262388224000</a></p>
-				</section>
-				<section data-state="tertiary-slide">
-					<h3>The most frustrating perf bug, ever</h3>
-					<img src="images/onunload.png"/>
-				</section>
-				<section data-state="tertiary-slide">
-					<h3>Who watches the watchmen?</h3>
-					<img src="images/onload-profile-retail-mobile-1.png"/>
-					<p class="subtitle bottom-left smaller"><a href="https://calendar.perfplanet.com/2017/an-audit-of-boomerangs-performance/">calendar.perfplanet.com/2017/an-audit-of-boomerangs-performance/</a></p>
-				</section>
-			</section>
-			<section>
-				<section data-state="secondary-slide">
-					<h4>Risk 4:</h4>
-					<h2>Performance 🚀</h2>
-					<h3>(part III)</h3>
-				</section>
-				<section data-state="tertiary-slide">
-					<h3>delaying onload</h3>
-					<img width="60%" src="images/onload-delay.png"/>
-				</section>
-				<section data-state="tertiary-slide">
-					<h3>keeping the radio awake</h3>
-					<img width="70%" src="images/clicktale.png"/>
-				</section>
-			</section>
-			<section data-state="main-slide">
-				<h2>We have little control<br>over which are used</h2>
-				<p>But there are things we can do...</p>
-			</section>
-			<section>
-				<section data-state="secondary-slide">
-					<h4>Stage 1:</h4>
-					<h2>Find out what's there</h2>
-					<img width="50%" src="images/adblock.png"/>
-					<p class="subtitle bottom-left smaller">
-						<a href="http://fortune.com/2015/07/08/adblock-data/">fortune.com/2015/07/08/adblock-data/</a>
-					</p>
-				</section>
-				<section data-state="tertiary-slide">
-					<h3>Synthetic Testing (webpagetest)</h3>
-					<img src="images/content-breakdown.png" />
-					<p class="subtitle bottom-left smaller">
-						<a href="https://www.webpagetest.org/result/180326_QK_333a4d124f5dde54debc4996177e34f4/1/domains/">webpagetest.org/</a>
-					</p>
-				</section>
-				<section data-state="tertiary-slide">
-					<h3>Synthetic Testing (webpagetest)</h3>
-					<video controls="true" src="videos/fjson.mov" />
-					<p class="subtitle bottom-left smaller">
-						<a href="https://www.webpagetest.org/result/180326_QK_333a4d124f5dde54debc4996177e34f4/1/domains/">webpagetest.org/</a>
-					</p>
-				</section>
-				<section data-state="tertiary-slide" data-background-video="videos/requestmap.mov">
-					
-				</section>
-				<section data-state="tertiary-slide">
-					<!--<p>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br></p>-->
-					<h3>Bonus: Third-party categorization</h3>
-					<iframe class="iframe-big" data-src="http://thirdpartydb.appspot.com/"></iframe>
-					<p class="subtitle bottom-left smaller">
-						<a href="https://github.com/simonhearne/thirdpartydb/">github.com/simonhearne/thirdpartydb</a> |
-						<a href="https://thirdpartydb.appspot.com/">thirdpartydb.appspot.com</a>
-					</p>
-				</section>
-				<section data-state="tertiary-slide">
-					<h3>Real User Monitoring 🥃</h3>
-					<video width="60%" controls="no" autoplay="true" loop="true" name="Circle Packing" src="videos/circlepacking.mov"></video>
-					<p class="subtitle bottom-left smaller">Akamai mPulse</p>
-				</section>
-			</section>
-			<section data-state="secondary-slide">
-				<section data-state="secondary-slide">
-					<h4>Stage 2:</h4>
-					<h2>Determine the impact</h2>
-				</section>
-				<section data-state="tertiary-slide">
-					<h3>Synthetic Testing (webpagetest)</h3>
-					<img src="images/wpt_block.png" />
-				</section>
-				<section data-state="tertiary-slide">
-					<h3>Synthetic Testing (made easy)</h3>
-					<img src="images/tpi1.png"/>
-					<p class="subtitle bottom-left smaller">
-						<a href="https://github.com/simonhearne/third-party-impact/">github.com/simonhearne/third-party-impact/</a>
-					</p>
-				</section>
-				<section data-state="tertiary-slide">
-					<h3>Synthetic Testing (made easy)</h3>
-					<img src="images/tpi2.png"/>
-					<p class="subtitle bottom-left smaller">
-						<a href="https://github.com/simonhearne/third-party-impact/">github.com/simonhearne/third-party-impact/</a>
-					</p>
-				</section>
-				<section data-state="tertiary-slide">
-					<h3>Resource Impact from Synthetics 🤖</h3>
-					<img src="images/catchpoint.jpg" />
-					<p class="subtitle bottom-left smaller"><a href="http://blog.catchpoint.com/2018/01/10/using-catchpoint-to-analyze-third-party-impact/">blog.catchpoint.com/2018/01/10/using-catchpoint-to-analyze-third-party-impact/</a></p>
-				</section>
-				<section data-state="tertiary-slide">
-					<h3>Resource Impact from Synthetics 🤖</h3>
-					<video data-src="videos/speedcurve.mp4" width="70%" autoplay></video>
-					<p class="subtitle bottom-left smaller"><a href="https://speedcurve.com/blog/ux-focus-for-waterfalls-and-third-parties/">speedcurve.com/blog/ux-focus-for-waterfalls-and-third-parties/</a></p>
-				</section>
-				<section data-state="tertiary-slide">
-					<h3>Resource Impact from RUM</h3>
-					<video autoplay name="Resource Impact Infographic" src="videos/infographic.mov"></video>
-				</section>
-				<section data-state="tertiary-slide">
-					<h3>Advertising Partners</h3>
-					<p class="fragment">Partner 1 =
-						<b>~400ms slower</b> than partner 2</p>
-					<p class="fragment">Migrating all ads =
-						<b>220ms faster</b> page load</p>
-					<p class="fragment">Additional revenue ~=
-						<b>$12,000 per month</b>
-					</p>
-					<p class="subtitle bottom-left smaller">Large US publishing company</p>
-				</section>
 				<!--
-				<section data-state="tertiary-slide">
-					<h3>Analytics</h3>
-					<p class="todo">TODO: add RIS results for analytics</p>
+					<section data-state="tertiary-slide">
+						<h3>Resource Timing has limitations</h3>
+						<div class="center-container-1">
+							<div class="center-container-2">
+								<div class="centered align-left">
+									<p class="fragment">🙈 no redirect information</p>
+									<p class="fragment">🙈 limited data on
+										<b>72%</b> of third-party content</p>
+										<p class="fragment">🙈 only the first 150 requests *</p>
+										<p class="fragment">🙈 no data on old iDevices</p>
+										<p class="fragment">🙈 no data for cross-origin iframes</p>
+									</div>
+								</div>
+							</div>
+							<p class="subtitle bottom-left smaller">
+								<a href="https://developer.akamai.com/blog/2017/07/26/measuring-performance-third-party-contributors/">developer.akamai.com/blog/2017/07/26/measuring-performance-third-party-contributors/</a>
+								<br>* limit can be increased per pageview
+							</p>
+						</section>
+					-->
+					<section data-state="tertiary-slide">
+						<h3>CPU is our biggest bottleneck ⏳</h3>
+						<img src="images/cpu-mobile.png"/>
+					</section>
+					<!--
+					<section data-state="tertiary-slide"n>
+						<h3>Who's policing the third-parties?</h3>
+						<img src="images/cpu-abuser.png"/>
+						<p class="subtitle bottom-left smaller"><a href="https://github.com/jpvincent/3rd-party-cpu-abuser">github.com/jpvincent/3rd-party-cpu-abuser</a></p>
+					</section>
+						<section data-state="tertiary-slide">
+							<h3>Variable CPU time</h3>
+							<h4>on synthetic agents!</h4>
+							<img src="images/third-party-cpu-httparchive.jpg" />
+							<p class="subtitle bottom-left smaller"><a href="https://twitter.com/AndyDavies/status/973895262388224000">twitter.com/AndyDavies/status/973895262388224000</a></p>
+						</section>
+					-->
+					<section data-state="tertiary-slide">
+						<h3>The most frustrating perf bug, ever</h3>
+						<img src="images/onunload.png"/>
+					</section>
+					<section data-state="tertiary-slide">
+						<h3>Devices are not affected equally</h3>
+						<img width="75%" src="images/missguided1.jpg"/>
+						<p class="subtitle bottom-left smaller"><a href="https://noti.st/andydavies/dCBdI2/fast-fashion-how-missguided-revolutionised-their-approach-to-site-performance">Fast Fashion… How Missguided revolutionised their approach to site performance</a></p>
+					</section>
+					<section data-state="tertiary-slide">
+						<h3>Devices are not affected equally</h3>
+						<img width="75%" src="images/missguided2.png"/>
+						<p class="subtitle bottom-left smaller"><a href="https://noti.st/andydavies/dCBdI2/fast-fashion-how-missguided-revolutionised-their-approach-to-site-performance">Fast Fashion… How Missguided revolutionised their approach to site performance</a></p>
+					</section>
+					<!--
+					<section data-state="tertiary-slide">
+						<h3>Who watches the watchmen?</h3>
+						<img src="images/onload-profile-retail-mobile-1.png"/>
+						<p class="subtitle bottom-left smaller"><a href="https://calendar.perfplanet.com/2017/an-audit-of-boomerangs-performance/">calendar.perfplanet.com/2017/an-audit-of-boomerangs-performance/</a></p>
+					</section>
+					-->
+					
+					<section data-state="secondary-slide">
+						<h2>Performance 🚀</h2>
+						<ul>
+							<li>Does their performance affect yours?</li>
+							<li>Do they let you measure them?</li>
+						</ul>
+					</section>
 				</section>
-				<section data-state="tertiary-slide">
-					<h3>Multivariate Testing / 'Optimization'</h3>
-					<p class="todo">TODO: add RIS results for optimizely</p>
+				<section data-state="main-slide">
+					<h2>Actions to take</h2>
+					<table class="matrix">
+						<tr><th></th><th>Discovery</th><th>Impact</th><th>Reporting</th><th>Code Quality</th><th>Availability</th><th>Data Leakage</th><th>Performance</th></tr>
+						<tr class="fragment"><td class="cell-challenge">Removal 🗑</td><td class="cell-lo"><td class="cell-lo"></td><td class="cell-lo"></td><td class="cell-hi"></td><td class="cell-hi"></td><td class="cell-hi"></td><td class="cell-hi"></td></tr>
+						<!--
+						<tr><td class="cell-challenge">Synthetic</td>		<td class="cell-md"><td class="cell-hi"></td><td class="cell-md"></td><td class="cell-lo"></td><td class="cell-hi"></td><td class="cell-md"></td><td class="cell-md"></td></tr>
+						<tr><td class="cell-challenge">RUM</td>				<td class="cell-md"><td class="cell-hi"></td><td class="cell-hi"></td><td class="cell-lo"></td><td class="cell-md"></td><td class="cell-md"></td><td class="cell-hi"></td></tr>
+						<tr><td class="cell-challenge">SRI / Versioning</td><td class="cell-lo"><td class="cell-lo"></td><td class="cell-md"></td><td class="cell-md"></td><td class="cell-lo"></td><td class="cell-md"></td><td class="cell-lo"></td></tr>
+						<tr><td class="cell-challenge">CSP (RO)</td>		<td class="cell-hi"><td class="cell-lo"></td><td class="cell-hi"></td><td class="cell-md"></td><td class="cell-lo"></td><td class="cell-md"></td><td class="cell-lo"></td></tr>
+						<tr><td class="cell-challenge">CSP</td>				<td class="cell-hi"><td class="cell-lo"></td><td class="cell-hi"></td><td class="cell-md"></td><td class="cell-lo"></td><td class="cell-md"></td><td class="cell-lo"></td></tr>
+						<tr><td class="cell-challenge">ServiceWorker</td>	<td class="cell-lo"><td class="cell-lo"></td><td class="cell-lo"></td><td class="cell-lo"></td><td class="cell-hi"></td><td class="cell-lo"></td><td class="cell-md"></td></tr>
+						-->
+					</table>
 				</section>
-			-->
-				<section data-state="tertiary-slide">
-					<h3>LongTasks API</h3>
-					<img src="images/longtasks.png"/>
+				<section>
+					<section data-background-image="images/requestmap.png">
+						<h4>Stage 1:</h4>
+						<h2>Find out what's there 👁‍🗨</h2>
+						
+						<p class="subtitle bottom-left smaller">
+							<a href="https://requestmap.herokuapp.com/render/180604_H5_cafbfc4bc02e05cf7df765fcfe4f6666/?dark=1&legend=0&hidelabels=1&minimalist=1">RequestMap</a>
+						</p>
+					</section>
+					<section data-state="tertiary-slide">
+						<h3>Synthetic Testing</h3>
+						<img class="naked icon" src="images/icons/synthetic.png" />
+					</section>
+					<!--
+					<section data-state="tertiary-slide">
+						<h3>Synthetic Testing (webpagetest)</h3>
+						<img src="images/content-breakdown.png" />
+						<p class="subtitle bottom-left smaller">
+							<a href="https://www.webpagetest.org/result/180326_QK_333a4d124f5dde54debc4996177e34f4/1/domains/">webpagetest.org/</a>
+						</p>
+					</section>
+					-->
+					<section data-state="tertiary-slide">
+						<h3>Synthetic Testing (webpagetest)</h3>
+						<video autoplay muted loop src="videos/fjson.mov" />
+						<p class="subtitle bottom-left smaller">
+							<a href="https://www.webpagetest.org/result/180326_QK_333a4d124f5dde54debc4996177e34f4/1/domains/">webpagetest.org/</a>
+						</p>
+					</section>
+					<section data-state="tertiary-slide" data-background-video="videos/requestmap.mov">
+						
+					</section>
+					<section>
+						<h2>Conducting an Audit</h2>
+						<img src="images/harry.png">
+						<p class="subtitle bottom-left smaller"><a href="https://csswizardry.com/2018/05/identifying-auditing-discussing-third-parties/">Identifying, Auditing, and Discussing Third Parties - CSS Wizardry</a></p>
+					</section>
+					<!--
+						<section data-state="tertiary-slide">
+							<h3>Bonus: Third-party categorization</h3>
+							<iframe class="iframe-big" data-src="http://thirdpartydb.appspot.com/"></iframe>
+							<p class="subtitle bottom-left smaller">
+								<a href="https://github.com/simonhearne/thirdpartydb/">github.com/simonhearne/thirdpartydb</a> |
+								<a href="https://thirdpartydb.appspot.com/">thirdpartydb.appspot.com</a>
+							</p>
+						</section>
+					-->
+					<section data-state="tertiary-slide">
+							<h3>Real User Monitoring 🥃</h3>
+							<img class="naked icon" src="images/icons/recorder.png" />
+						</section>
+						<!--
+					<section data-state="tertiary-slide">
+						<h3>Real User Monitoring 🥃</h3>
+						<iframe width="900" height="600" src="https://dswb.soasta.com:3000/html/treemap.html?data=treemap.json&legend=1&drill=1"></iframe>
+						<p class="subtitle bottom-left smaller">Akamai mPulse</p>
+					</section>
+					-->
+					<section data-state="tertiary-slide">
+						<h3>Real User Monitoring 🥃</h3>
+						<iframe width="900" height="600" src="https://dswb.soasta.com:3000/html/treemap.html?data=treemap.json&legend=1"></iframe>
+						<p class="subtitle bottom-left smaller">Akamai mPulse</p>
+					</section>
+					<section data-state="tertiary-slide">
+						<!--<h3>Real User Monitoring 🥃</h3>-->
+						<div style="width:1000px;height:100%;" id="svg-container-3"></div>
+						<script type="text/javascript">
+							var yourVlSpec = {
+								"$schema": "https://vega.github.io/schema/vega-lite/v2.json",
+								"data": { "url": "data/thirdparty_pagegroups.tsv"},
+								"mark": "rect",
+								"encoding": {
+									"y": {
+										"field": "HOST",
+										"type": "nominal"
+									},
+									"x": {
+										"field": "PAGEGROUPNAME",
+										"type": "nominal"
+									},
+									"color": {
+										"field": "FREQ",
+										"type": "quantitative",
+										"aggregate": "sum"
+									}
+								}
+							};
+							var opts = {
+								"actions": false,
+								"width": 1000,
+								"height": 600,
+								"renderer": "svg",
+								"config": {
+									"autosize": "fit",
+									"background": "white"
+									
+								}
+							};
+							vegaEmbed("#svg-container-3", yourVlSpec, opts);
+						</script>
+					</section>
 				</section>
-				
-				<section data-state="tertiary-slide">
-					<h3>Bonus: determine the value!</h3>
-					<img src="images/optimizely-test.png" />
-					<p class="subtitle bottom-left smaller">
-						<a href="http://blog.sumall.com/journal/optimizely-got-me-fired.html">blog.sumall.com/journal/optimizely-got-me-fired.html</a>
-					</p>
-				</section>
-				<section data-state="tertiary-slide">
-					<blockquote class="big">"Everything should have a
-						<b>value</b>,
-						<br>because everything has a
-						<b>cost</b>"</blockquote>
-					<p class="subtitle bottom-left">Tim Kadlec - freelance #webperf god</p>
-				</section>
+				<section data-state="secondary-slide">
+					<section data-state="secondary-slide">
+						<h4>Stage 2:</h4>
+						<h2>Determine the impact 📉</h2>
+					</section>
+					<section data-state="tertiary-slide">
+						<h3>Synthetic Testing (webpagetest)</h3>
+						<img src="images/spof-o-matic.png" />
+						<p class="subtitle bottom-left smaller"><a href="http://bit.ly/thelocalwpt">SPOF-O-Matic Chrome Extension</a></p>
+					</section>
+					<section data-state="tertiary-slide">
+						<h3>Synthetic Testing (webpagetest)</h3>
+						<video muted autoplay loop src="videos/spof.mp4" />
+						<p class="subtitle bottom-left smaller"><a href="http://bit.ly/thelocalwpt">bit.ly/thelocalwpt</a></p>
+					</section>
+					<section data-state="tertiary-slide">
+						<h3>Synthetic Testing (webpagetest)</h3>
+						<img src="images/wpt_block.png" />
+					</section>
+					<!--
+						<section data-state="tertiary-slide">
+							<h3>Synthetic Testing (made easy)</h3>
+							<img src="images/tpi1.png"/>
+							<p class="subtitle bottom-left smaller">
+								<a href="https://github.com/simonhearne/third-party-impact/">github.com/simonhearne/third-party-impact/</a>
+							</p>
+						</section>
+						<section data-state="tertiary-slide">
+							<h3>Synthetic Testing (made easy)</h3>
+							<img src="images/tpi2.png"/>
+							<p class="subtitle bottom-left smaller">
+								<a href="https://github.com/simonhearne/third-party-impact/">github.com/simonhearne/third-party-impact/</a>
+							</p>
+						</section>
+						<section data-state="tertiary-slide">
+							<h3>Resource Impact from Synthetics 🤖</h3>
+							<img src="images/catchpoint.jpg" />
+							<p class="subtitle bottom-left smaller"><a href="http://blog.catchpoint.com/2018/01/10/using-catchpoint-to-analyze-third-party-impact/">blog.catchpoint.com/2018/01/10/using-catchpoint-to-analyze-third-party-impact/</a></p>
+						</section>
+						<section data-state="tertiary-slide">
+							<h3>Resource Impact from Synthetics 🤖</h3>
+							<video data-src="videos/speedcurve.mp4" width="70%" autoplay></video>
+							<p class="subtitle bottom-left smaller"><a href="https://speedcurve.com/blog/ux-focus-for-waterfalls-and-third-parties/">speedcurve.com/blog/ux-focus-for-waterfalls-and-third-parties/</a></p>
+						</section>
+					-->
+					<section data-state="tertiary-slide">
+						<h3>Resource Impact from RUM</h3>
+						<video muted autoplay loop name="Resource Impact Infographic" src="videos/infographic.mov"></video>
+						<!--<iframe width="1000" height="500" src="https://dswb.soasta.com:3000/html/optimization_infographic.html?data=optimization_infographic_clean.json"></iframe>-->
+					</section>
+					<section data-state="tertiary-slide">
+						<h3>Advertising Partners</h3>
+						<p class="fragment">Partner 1 =
+							<b>~400ms slower</b> than partner 2</p>
+							<p class="fragment">Migrating all ads =
+								<b>~100ms faster</b> page load</p>
+								<p class="fragment">Additional revenue ~=
+									<b>$8,000 per month</b>
+								</p>
+								<p class="subtitle bottom-left smaller">Large US publishing company</p>
+							</section>
+							<!--
+								<section data-state="tertiary-slide">
+									<h3>Analytics</h3>
+									<p class="todo">TODO: add RIS results for analytics</p>
+								</section>
+								<section data-state="tertiary-slide">
+									<h3>Multivariate Testing / 'Optimization'</h3>
+									<p class="todo">TODO: add RIS results for optimizely</p>
+								</section>
+							<section data-state="tertiary-slide">
+								<h3>LongTasks API</h3>
+								<img src="images/longtasks.png"/>
+							</section>
+							-->
+							
+							<section data-state="tertiary-slide">
+								<blockquote class="big">"Everything should have a
+									<b>value</b>,
+									<br>because everything has a
+									<b>cost</b>"</blockquote>
+									<p class="subtitle bottom-left smaller">Tim Kadlec</p>
+								</section>
+					
 			</section>
 			<section data-state="secondary-slide">
 				<section data-state="secondary-slide">
 					<h4>Stage 3:</h4>
-					<h2>Measure them and Report on them</h2>
+					<h2>Measure them and Report on them 📊</h2>
 				</section>
+
+				<section data-state="tertiary-slide">
+						<h3>Content Security Policy 👮‍</h3>
+						<img class="naked icon" src="images/icons/firewall.png" />
+					</section>
 				<section data-state="tertiary-slide">
 					<h3>Content Security Policy 👮‍</h3>
 					<h4>(report-only)</h4>
@@ -615,109 +589,100 @@ document.write("&lt;div
 		"status-code": 0,
 		"script-sample": ""
 	}
-}</code></pre>
-					<p class="subtitle bottom-left smaller">
-						<a href="https://report-uri.com">report-uri.com</a>
-					</p>
-				</section>
-				<section data-state="tertiary-slide">
-					<h3>Synthetic Testing 🤖</h3>
-					<img src="images/catchpoint.png" />
-					<p class="subtitle bottom-left smaller"><a href="http://blog.catchpoint.com/2018/01/10/using-catchpoint-to-analyze-third-party-impact/">blog.catchpoint.com/2018/01/10/using-catchpoint-to-analyze-third-party-impact/</a></p>
-				</section>
-				<section data-state="tertiary-slide">
-					<h3>RUM 🥃</h3>
-					<p>The
-						<b>best</b> way to monitor resources,
-						<br>even with its limitations</p>
-				</section>
-				<section data-state="tertiary-slide">
-					<h3>🥃 Waterfalls</h3>
-					<video controls="no" autoplay="true" loop="true" height="500px" name="Aggregate Waterfall" src="videos/aggwaterfall.mov"></video>
-					<p class="subtitle bottom-left smaller">Akamai mPulse</p>
-				</section>
-			</section>
-			<section data-state="secondary-slide">
-				<section data-state="secondary-slide">
-					<h4>Stage 4:</h4>
-					<h2>Defend ourselves 🤼‍</h2>
-				</section>
-				<section data-state="tertiary-slide">
-					<h3>Content Security Policy 👮‍️</h3>
-					<img src="images/csp.png"/>
-					<p class="subtitle bottom-left smallest">
-						<a href="https://caniuse.com/#feat=contentsecuritypolicy2">caniuse.com/#feat=contentsecuritypolicy2</a>
-					</p>
-				</section>
-				<section data-state="tertiary-slide">
-					<h3>Content Security Policy 👮‍️</h3>
-					<img src="images/xss_reporting.png" />
-					<p class="subtitle bottom-left smaller">
-						<a href="https://report-uri.com">report-uri.com</a>
-					</p>
-				</section>
-				<section data-state="tertiary-slide">
-					<h3>CSP Strict-Dynamic</h3>
-					<img src="images/strict-dynamic.png" />
-				</section>
-				<section data-state="tertiary-slide">
-					<h3>Content Security Policy 👮‍️</h3>
-					<div class="center-container-1">
-						<div class="center-container-2">
-							<div class="centered align-left">
-								<p class="fragment">👍 CryptoJacking</p>
-								<p class="fragment">👍 XSS</p>
-								<p class="fragment">👎 Maintenance</p>
-							</div>
-						</div>
-					</div>
-				</section>
-				<section data-state="tertiary-slide">
-					<h3>Sub-resource Integrity 🔍</h3>
-					<pre><code class="html" data-trim>
-&lt;link
-	rel="stylesheet"
-	href="//maxcdn.bootstrapcdn.com/.../bootstrap.min.css"
-	integrity="
-		sha256-8EtRe6XWoFEEhWiaPkLaw...=
-		sha512-/5KWJw2mvMO2ZM5fndVxU...=
-		"
-	
-	crossorigin="anonymous"&gt;
+}
 					</code></pre>
-					<pre><code class="hlhtml" data-trim contenteditable>
+						<p class="subtitle bottom-left smaller">
+							<a href="https://report-uri.com">report-uri.com</a>
+						</p>
+					</section>
+					<section data-state="tertiary-slide">
+						<h3>Synthetic Testing 🤖</h3>
+						<img src="images/catchpoint.png" />
+						<p class="subtitle bottom-left smaller"><a href="http://blog.catchpoint.com/2018/01/10/using-catchpoint-to-analyze-third-party-impact/">blog.catchpoint.com/2018/01/10/using-catchpoint-to-analyze-third-party-impact/</a></p>
+					</section>
+					<section data-state="tertiary-slide">
+						<h3>RUM 🥃</h3>
+						<p>The
+							<b>best</b> way to monitor resources,
+							<br>even with its limitations</p>
+					</section>
+					<section data-state="tertiary-slide">
+						<h3>🥃 Waterfalls</h3>
+						<!--<video controls="no" autoplay="true" loop="true" height="500px" name="Aggregate Waterfall" src="videos/aggwaterfall.mov"></video>-->
+						<iframe width="1000" height="500" src="https://dswb.soasta.com:3000/html/aggregate_resource_waterfall.html?debug=3&data=aggregate_resource_waterfall.json"></iframe>
+						<p class="subtitle bottom-left smaller">Akamai mPulse</p>
+					</section>
+				</section>
+					<section data-state="main-slide">
+						<h2>Actions to take</h2>
+						<table class="matrix">
+							<tr><th></th><th>Discovery</th><th>Impact</th><th>Reporting</th><th>Code Quality</th><th>Availability</th><th>Data Leakage</th><th>Performance</th></tr>
+							<tr><td class="cell-challenge">Removal</td><td class="cell-lo"><td class="cell-lo"></td><td class="cell-lo"></td><td class="cell-hi"></td><td class="cell-hi"></td><td class="cell-hi"></td><td class="cell-hi"></td></tr>
+							<tr class="fragment"><td class="cell-challenge">Synthetic</td>		<td class="cell-md"><td class="cell-hi"></td><td class="cell-md"></td><td class="cell-lo"></td><td class="cell-hi"></td><td class="cell-md"></td><td class="cell-md"></td></tr>
+							<tr class="fragment"><td class="cell-challenge">RUM</td>				<td class="cell-md"><td class="cell-hi"></td><td class="cell-hi"></td><td class="cell-lo"></td><td class="cell-md"></td><td class="cell-md"></td><td class="cell-hi"></td></tr>
+							<tr class="fragment"><td class="cell-challenge">CSP (RO)</td>		<td class="cell-hi"><td class="cell-lo"></td><td class="cell-hi"></td><td class="cell-md"></td><td class="cell-lo"></td><td class="cell-md"></td><td class="cell-lo"></td></tr>
+							<!--
+							<tr><td class="cell-challenge">SRI / Versioning</td><td class="cell-lo"><td class="cell-lo"></td><td class="cell-md"></td><td class="cell-md"></td><td class="cell-lo"></td><td class="cell-md"></td><td class="cell-lo"></td></tr>
+							<tr><td class="cell-challenge">CSP</td>				<td class="cell-hi"><td class="cell-lo"></td><td class="cell-hi"></td><td class="cell-md"></td><td class="cell-lo"></td><td class="cell-md"></td><td class="cell-lo"></td></tr>
+							<tr><td class="cell-challenge">ServiceWorker</td>	<td class="cell-lo"><td class="cell-lo"></td><td class="cell-lo"></td><td class="cell-lo"></td><td class="cell-hi"></td><td class="cell-lo"></td><td class="cell-md"></td></tr>
+							<tr><td class="cell-challenge">Self Hosting</td>	<td class="cell-lo"><td class="cell-lo"></td><td class="cell-lo"></td><td class="cell-lo"></td><td class="cell-hi"></td><td class="cell-lo"></td><td class="cell-md"></td></tr>
+							-->
+						</table>
+					</section>
+					<section data-state="secondary-slide">
+						<section data-state="secondary-slide">
+							<h4>Stage 4:</h4>
+							<h2>Defend ourselves 🤼‍</h2>
+						</section>
+						
+				<section data-state="tertiary-slide">
+						<h3>Content Security Policy 👮‍</h3>
+						<img class="naked icon" src="images/icons/firewall.png" />
+					</section>
+										<section data-state="tertiary-slide">
+											<h3>Content Security Policy 👮‍️</h3>
+											<img src="images/csp.png"/>
+											<p class="subtitle bottom-left smallest">
+												<a href="https://caniuse.com/#feat=contentsecuritypolicy2">caniuse.com/#feat=contentsecuritypolicy2</a>
+											</p>
+										</section>
+										
+				<section data-state="tertiary-slide">
+						<h3>Sub-resource Integrity 🔍</h3>
+						<img class="naked icon" src="images/icons/id.png" />
+					</section>
+										<section data-state="tertiary-slide">
+											<h3>Sub-resource Integrity 🔍</h3>
+											<pre><code class="html" data-trim>
+&lt;link
+rel="stylesheet"
+href="//maxcdn.bootstrapcdn.com/.../bootstrap.min.css"
+integrity="
+sha256-8EtRe6XWoFEEhWiaPkLaw...=
+sha512-/5KWJw2mvMO2ZM5fndVxU...=
+"
+
+crossorigin="anonymous"&gt;
+											</code></pre>
+											<pre><code class="hlhtml" data-trim contenteditable>
 &lt;script
-	src="//ajax.googleapis.com/.../jquery.min.js"
-	integrity="
-		sha256-ivk71nXhz9nsyFDoYoGf2...=
-		sha512-7aMbXH03HUs6zO1R+pLye...=
-		"
-		
-	crossorigin="anonymous"&gt;&lt;/script&gt;
-</script>
-</code></pre>
-				</section>
-				<section data-state="tertiary-slide">
-					<h3>Sub-resource Integrity 🔍</h3>
-					<div class="center-container-1">
-						<div class="center-container-2">
-							<div class="centered align-left">
-								<p class="fragment">👍 Malicious Code</p>
-								<p class="fragment">👍 Untested Changes</p>
-								<p class="fragment">👎 Maintenance</p>
-								<div class="fragment">
-								<p >⭐️ Signature-based Restrictions...*</p>
-								<p class="subtitle bottom-left smallest">
-									<a href="https://github.com/mikewest/signature-based-sri">github.com/mikewest/signature-based-sri</a>
-								</p>
-							</div>
-						</div>
-					</div>
-					
-				</section>
-				<section data-state="tertiary-slide">
-					<h3>Service Worker 💪</h3>
-					<pre><code class="hljs compact">
+src="//ajax.googleapis.com/.../jquery.min.js"
+integrity="
+sha256-ivk71nXhz9nsyFDoYoGf2...=
+sha512-7aMbXH03HUs6zO1R+pLye...=
+"
+
+crossorigin="anonymous"&gt;&lt;/script&gt;
+											</script>
+										</code></pre>
+									</section>
+									<section data-state="tertiary-slide">
+											<h3>Service Worker 💪</h3>
+											<img class="naked icon" src="images/icons/spy.png" />
+											</section>
+										<section data-state="tertiary-slide">
+											<h3>Service Worker 💪</h3>
+											<pre><code class="hljs compact">
 function timeout(delay) {
 	return new Promise(function(resolve, reject) {
 		setTimeout(function(){
@@ -737,122 +702,124 @@ self.addEventListener('fetch', function(event) {
 		event.respondWith(fetch(event.request));
 	}
 });
-					</code></pre>
-					<p class="subtitle bottom-left smaller">
-						<a href="https://calendar.perfplanet.com/2015/reducing-single-point-of-failure-using-service-workers/">calendar.perfplanet.com/2015/reducing-single-point-of-failure-using-service-workers/</a>
-					</p>
-				</section>
-				<section data-state="tertiary-slide">
-					<h3>Service Worker 💪</h3>
-					<div class="center-container-1">
-						<div class="center-container-2">
-							<div class="centered align-left">
-								<p class="fragment">👍 CDN / Network outages</p>
-								<p class="fragment">👎 Not on first pageview</p>
-								<p class="fragment">👎 Maintenance</p>
-								<p class="fragment">👎 You can break your site</p>
-							</div>
-						</div>
-					</div>
-				</section>
-				<section data-state="tertiary-slide">
-					<h3>Self-hosting / Proxying ☔️</h3>
-					<img src="images/webfonts-helper.png"/>
-					<p class="subtitle bottom-left smaller"><a href="https://google-webfonts-helper.herokuapp.com/fonts">google-webfonts-helper.herokuapp.com/fonts</a></p>
-				</section>
-				<section data-state="tertiary-slide">
-					<h3>Self-hosting / Proxying ☔️</h3>
-					<img src="images/self-host.png"/>
-					<p class="subtitle bottom-left smaller"><a href="https://vwo.com/knowledge/host-vwo-javascript-files-on-your-server/">vwo.com/knowledge/host-vwo-javascript-files-on-your-server/</a></p>
-				</section>
-				<section data-state="tertiary-slide">
-					<h3>Self-hosting / Proxying ☔️</h3>
-					<img width="60%" src="images/proxy.png"/>
-					<p class="subtitle bottom-left smallest"><a href="https://community.akamai.com/community/web-performance/blog/2016/01/13/5-ways-to-prevent-slow-3rd-party-front-end-services">community.akamai.com/community/web-performance/blog/2016/01/13/5-ways-to-prevent-slow-3rd-party-front-end-services</a></p>
-				</section>
-				<section data-state="tertiary-slide">
-					<h3>Self-hosting / Proxying ☔️</h3>
-					<div class="center-container-1">
-						<div class="center-container-2">
-							<div class="centered align-left">
-								<p class="fragment">👍 CDN / Network outages</p>
-								<p class="fragment">👍 Shared TCP connection</p>
-								<p class="fragment">👎 Maintenance</p>
-							</div>
-						</div>
-					</div>
-				</section>
-			</section>
-			<section>
-				<section data-state="secondary-slide">
-					<h4>Stage 5:</h4>
-					<h2>Have a third-party policy 💼</h2>
-					<ul class="fragment">
-						<li>What does it do?</li>
-						<li>Who uses it?</li>
-						<li>What’s the risk to the site?</li>
-						<li>How do you remove it?</li>
-					</ul>
-				</section>
-				<section data-state="secondary-slide" data-background-image="images/speedcurve.png">
-					<h3 class="light-background">Share with other teams! 🗣</h3>
-					<p class="subtitle bottom-left smallest"><a href="https://speedcurve.com/demo/thirdparty/">speedcurve.com/demo/thirdparty/</a></p>
-				</section>
-			</section>
-			<section data-state="main-slide">
-				<section data-state="secondary-slide">
-					<h3>Third-party content may be a weak link</h3>
-					<h2>But it's here to stay</h2>
-				</section>
-				<section data-state="secondary-slide">
-					<h3>Five things you can do today:</h3>
-					<ul>
-						<li>Know what's there</li>
-						<li>Measure them</li>
-						<li>Have a solid defense</li>
-						<li>Share the data</li>
-						<li>Have third-party policy</li>
-					</ul>
-				</section>
-				<section data-state="tertiary-slide">
-					<h2>Further reading</h2>
-					<a href="https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/loading-third-party-javascript/#avoid_scripts_that_pollute_the_global_scope">
-						<img width="70%" src="images/google.png" />
-					</a>
-				</section>
-			</section>
-			<section data-state="title-slide">
-				<h1>Thank you,
-					<br>good luck!</h1>
-				<div class="align-container" style="width:75%;margin: 0 auto;">
-					<div class="left-align" style="text-align:left;">
-						<p>🚴‍ @SimonHearne</p>
-						<p>🛠 webperf.ninja/tools</p>
-						<p>🖥 simonhearne.github.io/weak-links</p>
-					</div>
-				</div>
-			</section>
-		</div>
-		<p class="subtitle bottom-right">@SimonHearne</p>
-	</div>
+											</code></pre>
+											<p class="subtitle bottom-left smallest">
+												<a href="https://calendar.perfplanet.com/2015/reducing-single-point-of-failure-using-service-workers/">calendar.perfplanet.com/2015/reducing-single-point-of-failure-using-service-workers/</a>
+											</p>
+										</section>
+										<section data-state="tertiary-slide">
+											<h3>Script Manager 💪</h3>
+											<img width="400" src="images/script-manager.png">
+										</section>
+										<!--
+											<section data-state="tertiary-slide">
+												<h3>Self-hosting / Proxying ☔️</h3>
+												<img src="images/webfonts-helper.png"/>
+												<p class="subtitle bottom-left smaller"><a href="https://google-webfonts-helper.herokuapp.com/fonts">google-webfonts-helper.herokuapp.com/fonts</a></p>
+											</section>
+										-->
 
-	<script src="lib/js/head.min.js"></script>
-	<script src="js/reveal.js"></script>
+										<section data-state="tertiary-slide">
+												<h3>Self-hosting / Proxying ☔️</h3>
+												<img class="naked icon" src="images/icons/bubblewrap.png" />
+											</section>
+										<section data-state="tertiary-slide">
+											<h3>Self-hosting / Proxying ☔️</h3>
+											<img src="images/self-host.png"/>
+											<p class="subtitle bottom-left smaller"><a href="https://vwo.com/knowledge/host-vwo-javascript-files-on-your-server/">vwo.com/knowledge/host-vwo-javascript-files-on-your-server/</a></p>
+										</section>
+										<section data-state="tertiary-slide">
+											<h3>Self-hosting / Proxying ☔️</h3>
+											<img width="60%" src="images/proxy.png"/>
+											<p class="subtitle bottom-left smallest"><a href="https://community.akamai.com/community/web-performance/blog/2016/01/13/5-ways-to-prevent-slow-3rd-party-front-end-services">community.akamai.com/community/web-performance/blog/2016/01/13/5-ways-to-prevent-slow-3rd-party-front-end-services</a></p>
+										</section>
+									</section>
 
-	<script>
-		Reveal.initialize({
-			transition: 'none',
-			history: true,
-			controlsTutorial: false,
-			dependencies: [{
-				src: 'plugin/highlight/highlight.js',
-				async: true,
-				callback: function () {
-					hljs.initHighlightingOnLoad();
-				}
-			}]
-		});
-	</script>
-</body>
+									<section data-state="main-slide">
+											<h2>Actions to take</h2>
+											<table class="matrix">
+												<tr><th></th><th>Discovery</th><th>Impact</th><th>Reporting</th><th>Code Quality</th><th>Availability</th><th>Data Leakage</th><th>Performance</th></tr>
+												<tr><td class="cell-challenge">Removal</td><td class="cell-lo"><td class="cell-lo"></td><td class="cell-lo"></td><td class="cell-hi"></td><td class="cell-hi"></td><td class="cell-hi"></td><td class="cell-hi"></td></tr>
+												<tr><td class="cell-challenge">Synthetic</td>		<td class="cell-md"><td class="cell-hi"></td><td class="cell-md"></td><td class="cell-lo"></td><td class="cell-hi"></td><td class="cell-md"></td><td class="cell-md"></td></tr>
+												<tr><td class="cell-challenge">RUM</td>				<td class="cell-md"><td class="cell-hi"></td><td class="cell-hi"></td><td class="cell-lo"></td><td class="cell-md"></td><td class="cell-md"></td><td class="cell-hi"></td></tr>
+												<tr><td class="cell-challenge">CSP (RO)</td>		<td class="cell-hi"><td class="cell-lo"></td><td class="cell-hi"></td><td class="cell-md"></td><td class="cell-lo"></td><td class="cell-md"></td><td class="cell-lo"></td></tr>
+												<tr class="fragment"><td class="cell-challenge">SRI / Versioning</td><td class="cell-lo"><td class="cell-lo"></td><td class="cell-md"></td><td class="cell-md"></td><td class="cell-lo"></td><td class="cell-md"></td><td class="cell-lo"></td></tr>
+												<tr class="fragment"><td class="cell-challenge">CSP</td>				<td class="cell-hi"><td class="cell-lo"></td><td class="cell-hi"></td><td class="cell-hi"></td><td class="cell-lo"></td><td class="cell-hi"></td><td class="cell-lo"></td></tr>
+												<tr class="fragment"><td class="cell-challenge">ServiceWorker</td>	<td class="cell-lo"><td class="cell-lo"></td><td class="cell-lo"></td><td class="cell-lo"></td><td class="cell-hi"></td><td class="cell-lo"></td><td class="cell-md"></td></tr>
+												<tr class="fragment"><td class="cell-challenge">Self Hosting</td>	<td class="cell-lo"><td class="cell-lo"></td><td class="cell-lo"></td><td class="cell-md"></td><td class="cell-hi"></td><td class="cell-lo"></td><td class="cell-md"></td></tr>
+											</table>
+										</section>
+									<section>
+										<section data-state="secondary-slide">
+											<h2>Have a third-party policy 💼</h2>
+											<ul class="fragment">
+												<li>What does it do?</li>
+												<li>Who uses it?</li>
+												<li>What’s the risk to the site?</li>
+												<li>How do you remove it?</li>
+											</ul>
+										</section>
+										<!--
+											<section data-state="secondary-slide" data-background-image="images/speedcurve.png">
+												<h3 class="light-background">Share with other teams! 🗣</h3>
+												<p class="subtitle bottom-left smallest"><a href="https://speedcurve.com/demo/thirdparty/">speedcurve.com/demo/thirdparty/</a></p>
+											</section>
+										-->
+									</section>
 
-</html>
+									<section data-state="main-slide">
+										<section data-state="secondary-slide">
+											<h3>Third-party content may be a weak link</h3>
+											<h2>But it's here to stay</h2>
+										</section>
+										<section data-state="secondary-slide">
+											<h3>Five things you can do this week:</h3>
+											<ul>
+												<li>Know what's there <span class="subtit">(requestmap)</span></li>
+												<li>Measure their performance <span class="subtit">(WPT / mPulse)</span></li>
+												<li>Share the data <span class="subtit">(dashboards)</span></li>
+												<li>Have a solid defense <span class="subtit">(SRI & CSP)</span></li>
+												<li>Have third-party policy <span class="subtit">(with IT & business)</span></li>
+											</ul>
+										</section>
+										<section data-state="tertiary-slide">
+											<h2>Further reading</h2>
+											<p class="subtitle bottom-left smaller"><a href="https://www.soasta.com/solutions/3rd-party-management/">https://www.soasta.com/solutions/3rd-party-management/</a></p>
+											<img width="80%" src="images/mpulse.png" />
+										</section>
+									</section>
+									<section data-state="title-slide">
+										<h1>Thank you,
+											<br>good luck!</h1>
+											<div class="align-container" style="width:75%;margin: 0 auto;">
+												<div class="left-align" style="text-align:left;margin-left:23%;">
+													<p>🚴‍ @SimonHearne</p>
+													<p>🛠 webperf.ninja/tools</p>
+													<p>🖥 shearne@akamai.com</p>
+												</div>
+											</div>
+										</section>
+									</div>
+									<p class="subtitle bottom-right">@SimonHearne</p>
+								</div>
+								
+								<script src="lib/js/head.min.js"></script>
+								<script src="js/reveal.js"></script>
+								
+								<script>
+									Reveal.initialize({
+										transition: 'none',
+										history: true,
+										controlsTutorial: false,
+										dependencies: [{
+											src: 'plugin/highlight/highlight.js',
+											async: true,
+											callback: function () {
+												hljs.initHighlightingOnLoad();
+											}
+										}]
+									});
+								</script>
+							</body>
+							
+							</html>
