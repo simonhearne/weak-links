@@ -168,7 +168,7 @@ HOST	PAGEGROUPNAME	FREQ	DURATION	REQUESTSTART
 "www.hlserve.com"	sale event landing	213704	369.466	65.407
 "connect.facebook.net"	dsign-in	209327	145.088	30.960
 "adserver-us.adtech.advertising.com"	search	208354	625.285	73.662
-"d3t1dw6evd1rv7.cloudfront.net"	kohlsgrw_home	206583	235.897	5.800
+"d3t1dw6evd1rv7.cloudfront.net"	appgrw_home	206583	235.897	5.800
 "static.curations.bazaarvoice.com"	read_review	205776	30.366	1.780
 "pps.nexus.bazaarvoice.com"	Product Detail Page	203800	354.071	7.333
 "securepubads.g.doubleclick.net"	store locator	202732	331.976	4623.381
@@ -389,7 +389,7 @@ HOST	PAGEGROUPNAME	FREQ	DURATION	REQUESTSTART
 "gampad"	Product Detail Page	57583	701.270	6766.049
 "ct.pinterest.com"	Product Detail Page	57225	865.746	81.130
 "cdns.brsrvr.com"	more like this	57039	102.693	4.188
-"s.btstatic.com"	kohlsgrw_home	56827	27.386	5.007
+"s.btstatic.com"	appgrw_home	56827	27.386	5.007
 "stats.g.doubleclick.net"	dsign-in	56706	364.218	6508.262
 "adnxs.com"	Product Detail Page	56608	684.885	15.328
 "www.google-analytics.com"	directCheckout	56579	157.009	948.607
@@ -402,7 +402,7 @@ HOST	PAGEGROUPNAME	FREQ	DURATION	REQUESTSTART
 "gpt"	product matrix	54409	274.190	6891.547
 "social.skavaone.com"	product matrix	54196	3.754	0.000
 "pagead2.googlesyndication.com"	sale event landing	53283	340.029	6066.772
-"s.btstatic.com"	kohlscharge	52407	13.519	0.694
+"s.btstatic.com"	appcharge	52407	13.519	0.694
 "stags.bluekai.com"	search	52372	658.474	389.713
 "cdns.brsrvr.com"	password reset	52193	294.705	23.216
 "chart.googleapis.com"	NULL	52153	185.813	12.650
@@ -471,7 +471,7 @@ HOST	PAGEGROUPNAME	FREQ	DURATION	REQUESTSTART
 "secure.checkout.visa.com"	Product Detail Page	38346	319.428	0.186
 "googleads4.g.doubleclick.net"	Product Detail Page	37898	404.997	7931.085
 "ing-district.clicktale.net"	checkout	37783	319.633	0.000
-"s.thebrighttag.com"	kohlsgrw_home	37740	174.481	5.110
+"s.thebrighttag.com"	appgrw_home	37740	174.481	5.110
 "pmp_m_ratings.png"	Product Detail Page	37690	145.112	2537.304
 "fastlane.rubiconproject.com"	NULL	37456	3105.415	0.000
 "c.evidon.com"	Product Detail Page	37419	229.430	10.692
@@ -482,11 +482,11 @@ HOST	PAGEGROUPNAME	FREQ	DURATION	REQUESTSTART
 "ad.tagdelivery.com"	sale event landing	35355	351.281	15.889
 "analytics.twitter.com"	product matrix	35310	476.937	28.570
 "s.btstatic.com"	d-registry	35096	41.783	9.508
-"securepubads.g.doubleclick.net"	kohlscharge	35082	223.453	1481.441
+"securepubads.g.doubleclick.net"	appcharge	35082	223.453	1481.441
 "s.thebrighttag.com"	ShoppingBag	35078	145.893	0.000
 "googleapis.com"	NULL	35017	179.230	0.000
 "ds-aksb-a.akamaihd.net"	purchase-history	34747	50.075	1208.452
-"s.thebrighttag.com"	kohlscharge	34736	153.375	0.412
+"s.thebrighttag.com"	appcharge	34736	153.375	0.412
 "tagdelivery.com"	Product Detail Page	34571	235.739	94.414
 "dpm.demdex.net"	store locator	34376	568.776	63.243
 "s.thebrighttag.com"	MyWallet	34279	143.748	12.581
